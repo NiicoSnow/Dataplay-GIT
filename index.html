@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Aérien</title>
+</head>
+<body>
+    <h1>Liste des Accidents d'Avion</h1>
+    <div>
+        <input type="text" id="searchDate" placeholder="Rechercher par date..." oninput="filterData()">
+        <input type="text" id="searchAircraft" placeholder="Rechercher par avion..." oninput="filterData()">
+        <input type="text" id="searchOperator" placeholder="Rechercher par opérateur..." oninput="filterData()">
+        <input type="text" id="searchCountry" placeholder="Rechercher par pays..." oninput="filterData()">
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Avion</th>
+                <th>Opérateur</th>
+                <th>Lieu</th>
+                <th>Cause</th>
+            </tr>
+        </thead>
+        <tbody id="data-table"></tbody>
+    </table>
+
+    <script>
+        let crashData = [];
+
+        window.onload = function () {
+            fetch('crash_save2.json')
+                .then(response => response.json())
+                .then(data => {
+                    crashData = data.crash;
+                    displayData(crashData);
+                })
+                .catch(error => console.error("Erreur de chargement du fichier JSON :", error));
+        };
+
+        function displayData(data) {
+            const tableBody = document.getElementById('data-table');
+            tableBody.innerHTML = "";
+            data.forEach(crash => {
+                const row = `<tr>
+                    <td>${crash.Date || 'N/A'}</td>
+                    <td>${crash.Aircraft || 'N/A'}</td>
+                    <td>${crash.Operator || 'N/A'}</td>
+                    <td>${crash["Crash location"] || 'N/A'}, ${crash.Country || 'N/A'}</td>
+                    <td>${crash["Crash cause"] || 'N/A'}</td>
+                </tr>`;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        function filterData() {
+            const searchDate = document.getElementById('searchDate').value.toLowerCase();
+            const searchAircraft = document.getElementById('searchAircraft').value.toLowerCase();
+            const searchOperator = document.getElementById('searchOperator').value.toLowerCase();
+            const searchCountry = document.getElementById('searchCountry').value.toLowerCase();
+            
+            const filteredData = crashData.filter(crash => 
+                (crash.Date && crash.Date.toLowerCase().includes(searchDate)) ||
+                (crash.Aircraft && crash.Aircraft.toLowerCase().includes(searchAircraft)) ||
+                (crash.Operator && crash.Operator.toLowerCase().includes(searchOperator)) ||
+                (crash.Country && crash.Country.toLowerCase().includes(searchCountry))
+            );
+            displayData(filteredData);
+        }
+    </script>
+</body>
+</html>
