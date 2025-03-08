@@ -1,2 +1,57 @@
 @import 'utils/variables';
 @import 'components/type';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* On masque les barres de défilement (overflow) en X et Y */
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  
+  /* Chaque "page" (section) occupe tout l'espace mais est cachée par défaut */
+  .page {
+    display: none;        /* cachée par défaut */
+    width: 100%;
+    height: 100%;
+    position: relative;   /* pour positionner facilement les éléments internes */
+    text-align: center;   /* centrer le texte horizontalement */
+    padding: 20px;
+  }
+  
+  /* La page courante (active) est affichée en flex pour centrer verticalement le contenu principal */
+  .page.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centre verticalement le bloc principal */
+    align-items: center;     /* centre horizontalement */
+  }
+  
+  /* Le titre au milieu de la page d'accueil */
+  .title {
+    font-size: 3em;
+    margin-bottom: 40px;
+  }
+  
+  /* La div qui contient les boutons en bas, côte à côte */
+  .buttons {
+    position: absolute;
+    bottom: 20px;        /* un peu de marge du bas */
+    left: 50%;
+    transform: translateX(-50%); /* pour centrer la zone de boutons */
+    display: flex;
+    gap: 20px;           /* espace horizontal entre les boutons */
+  }
+  
+  /* Styles génériques pour les boutons */
+  button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+  }
