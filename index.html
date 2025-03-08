@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Aérien</title>
+</head>
+<body>
+    <h1>Liste des Accidents d'Avion</h1>
+    <select id="choix_aircraft" onchange="updateModels(); filterData();">
+        <option value="">Tous les constructeurs</option>
+    </select>
+    <select id="choix_modele" onchange="updateOperators(); filterData();" disabled>
+        <option value="">Tous les modèles</option>
+    </select>
+    <select id="choix_operator" onchange="filterData()" disabled>
+        <option value="">Toutes les compagnies</option>
+    </select>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Avion</th>
+                <th>Modèle</th>
+                <th>Compagnie</th>
+                <th>Lieu</th>
+                <th>Cause</th>
+            </tr>
+        </thead>
+        <tbody id="data-table"></tbody>
+    </table>
+
+    <script>
+        let crashData = [];
+        let modelsByAircraft = {};
+        let operatorsByModel = {};
+
+        window.onload = function () {
+            fetch('crash_save2.json')
+                .then(response => response.json())
+                .then(data => {
+                    crashData = data.crash;
+                    displayData(crashData);
+                    loadFilters(crashData);
+                })
+        };
+
+        function displayData(data) {
+            const tableBody = document.getElementById('data-table');
+            tableBody.innerHTML = "";
+            data.forEach(crash => {
+                const row = `<tr>
+                    <td>${crash.Date}</td>
+                    <td>${crash.Aircraft}</td>
+                    <td>${crash.Model}</td>
+                    <td>${crash.Operator}</td>
+                    <td>${crash.Country}</td>
+                    <td>${crash["Crash cause"]}</td>
+                </tr>`;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        function filterData() {
+            const selectedAircraft = document.getElementById('choix_aircraft').value.toLowerCase();
+            const selectedModel = document.getElementById('choix_modele').value.toLowerCase();
+            const selectedOperator = document.getElementById('choix_operator').value.toLowerCase();
+
+            const filteredData = crashData.filter(crash => {
+                const aircraftMatch = selectedAircraft === "" || crash.Aircraft.toLowerCase() === selectedAircraft;
+                const modelMatch = selectedModel === "" || crash.Model.toLowerCase() === selectedModel;
+                const operatorMatch = selectedOperator === "" || crash.Operator.toLowerCase() === selectedOperator;
+                return aircraftMatch && modelMatch && operatorMatch;
+            });
+
+            displayData(filteredData);
+        }
+
+        function loadFilters(data) {
+            const optAircraft = document.getElementById('choix_aircraft');
+            optAircraft.innerHTML = '<option value="">Tous les constructeurs</option>';
+
+            modelsByAircraft = {};
+            operatorsByModel = {};
+
+            data.forEach(crash => {
+                const aircraftKey = crash.Aircraft.toLowerCase();
+                const modelKey = crash.Model.toLowerCase();
+                const operatorKey = crash.Operator.toLowerCase();
+
+                if (!modelsByAircraft[aircraftKey]) {
+                    modelsByAircraft[aircraftKey] = new Set();
+                }
+                modelsByAircraft[aircraftKey].add(crash.Model);
+
+                if (!operatorsByModel[modelKey]) {
+                    operatorsByModel[modelKey] = new Set();
+                }
+                operatorsByModel[modelKey].add(crash.Operator);
+            });
+
+            Object.keys(modelsByAircraft).sort().forEach(aircraft => {
+                const option = document.createElement('option');
+                option.value = aircraft;
+                option.textContent = aircraft;
+                optAircraft.appendChild(option);
+            });
+        }
+
+        function updateModels() {
+            const selectedAircraft = document.getElementById('choix_aircraft').value.toLowerCase();
+            const optModel = document.getElementById('choix_modele');
+            optModel.innerHTML = '<option value="">Tous les modèles</option>';
+
+            if (selectedAircraft && modelsByAircraft[selectedAircraft]) {
+                optModel.disabled = false;
+                Array.from(modelsByAircraft[selectedAircraft]).sort().forEach(model => {
+                    const option = document.createElement('option');
+                    option.value = model.toLowerCase();
+                    option.textContent = model;
+                    optModel.appendChild(option);
+                });
+            } else {
+                optModel.disabled = true;
+            }
+            document.getElementById('choix_operator').innerHTML = '<option value="">Toutes les compagnies</option>';
+            document.getElementById('choix_operator').disabled = true;
+        }
+
+        function updateOperators() {
+            const selectedModel = document.getElementById('choix_modele').value.toLowerCase();
+            const optOperator = document.getElementById('choix_operator');
+            optOperator.innerHTML = '<option value="">Toutes les compagnies</option>';
+
+            if (selectedModel && operatorsByModel[selectedModel]) {
+                optOperator.disabled = false;
+                Array.from(operatorsByModel[selectedModel]).sort().forEach(operator => {
+                    const option = document.createElement('option');
+                    option.value = operator.toLowerCase();
+                    option.textContent = operator;
+                    optOperator.appendChild(option);
+                });
+            } else {
+                optOperator.disabled = true;
+            }
+        }
+    </script>
+</body>
+</html>
