@@ -93,8 +93,8 @@ button {
 }
 .btn-accueil {
   border-radius: 100%;
-  height: 72px;
-  width: 72px;
+  height: 75px;
+  width: 75px;
   font-size: 40px;
   display: flex;
   justify-content: center; 
@@ -103,4 +103,6 @@ button {
   color: #FF7474;
   background-color: $main-color;
   border:none;
+  position: absolute;
+  bottom:20px
 }
