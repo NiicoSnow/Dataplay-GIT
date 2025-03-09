@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques des Crashs d'Avions</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { text-align: center; }
+        label { font-weight: bold; }
+        select { width: 100%; padding: 10px; margin-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #007BFF; color: white; }
+    </style>
+</head>
+<body>
+
+    <h2>Recherche des Crashs d'Avions</h2>
+
+    <label>Type d'avion :</label>
+    <select id="aircraftSelect">
+        <option value="">Sélectionner un Aircraft</option>
+    </select>
+
+    <label>Modèle :</label>
+    <select id="modelSelect">
+        <option value="">Sélectionner un Modèle</option>
+    </select>
+
+    <h3>Résultats :</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Aircraft</th>
+                <th>Model</th>
+                <th>Nombre de Crashs</th>
+                <th>Total Fatalities</th>
+            </tr>
+        </thead>
+        <tbody id="results"></tbody>
+    </table>
+
+    <script>
+        let crashData = [];
+        let aircraftModels = {};
+
+        // Charger les données JSON
+        fetch('crash_save2.json') // Assurez-vous que le fichier est bien accessible
+            .then(response => response.json())
+            .then(data => {
+                crashData = data.crash;
+                populateAircraftSelect();
+            });
+
+        function populateAircraftSelect() {
+            const aircraftSet = new Set();
+            aircraftModels = {};
+
+            // Récupérer tous les Aircrafts et leurs modèles
+            crashData.forEach(crash => {
+                const aircraft = crash.Aircraft;
+                const model = crash.Model;
+
+                aircraftSet.add(aircraft);
+
+                if (!aircraftModels[aircraft]) {
+                    aircraftModels[aircraft] = new Set();
+                }
+                aircraftModels[aircraft].add(model);
+            });
+
+            // Ajouter les options au select Aircraft
+            const aircraftSelect = document.getElementById('aircraftSelect');
+            aircraftSet.forEach(aircraft => {
+                let option = document.createElement('option');
+                option.value = aircraft;
+                option.textContent = aircraft;
+                aircraftSelect.appendChild(option);
+            });
+
+            aircraftSelect.addEventListener('change', populateModelSelect);
+        }
+
+        function populateModelSelect() {
+            const selectedAircraft = document.getElementById('aircraftSelect').value;
+            const modelSelect = document.getElementById('modelSelect');
+
+            // Réinitialiser le select Model
+            modelSelect.innerHTML = '<option value="">Sélectionner un Modèle</option>';
+
+            if (selectedAircraft && aircraftModels[selectedAircraft]) {
+                aircraftModels[selectedAircraft].forEach(model => {
+                    let option = document.createElement('option');
+                    option.value = model;
+                    option.textContent = model;
+                    modelSelect.appendChild(option);
+                });
+            }
+
+            modelSelect.addEventListener('change', filterResults);
+        }
+
+        function filterResults() {
+            const selectedAircraft = document.getElementById('aircraftSelect').value;
+            const selectedModel = document.getElementById('modelSelect').value;
+            const results = {};
+
+            // Regrouper par Aircraft & Model et additionner les crashs et victimes
+            crashData.forEach(crash => {
+                if (crash.Aircraft === selectedAircraft && crash.Model === selectedModel) {
+                    const key = crash.Aircraft + '|' + crash.Model;
+                    if (!results[key]) {
+                        results[key] = {
+                            Aircraft: crash.Aircraft,
+                            Model: crash.Model,
+                            CrashCount: 0,
+                            TotalFatalities: 0
+                        };
+                    }
+                    results[key].CrashCount++;
+                    results[key].TotalFatalities += parseInt(crash["Total fatalities"]);
+                }
+            });
+
+            // Afficher les résultats dans le tableau
+            const tableBody = document.getElementById("results");
+            tableBody.innerHTML = Object.values(results).map(entry => `
+                <tr>
+                    <td>${entry.Aircraft}</td>
+                    <td>${entry.Model}</td>
+                    <td>${entry.CrashCount}</td>
+                    <td>${entry.TotalFatalities}</td>
+                </tr>
+            `).join('');
+        }
+    </script>
+
+</body>
+</html>
