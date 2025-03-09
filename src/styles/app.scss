@@ -1,59 +1,70 @@
 @import 'utils/variables';
 @import 'components/type';
 
+$main-color: #173D63;
+$second-color: #67A1CD;
+$third-color: #2B5375;
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  /* On masque les barres de défilement (overflow) en X et Y */
-  html, body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    font-family: "Outfit", sans-serif;
-    font-size: 20px;
-    line-height: 1.4;
-  }
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+}
   
-  /* Chaque "page" (section) occupe tout l'espace mais est cachée par défaut */
-  .page {
-    display: none;        /* cachée par défaut */
-    width: 100%;
-    height: 100%;
-    position: relative;   /* pour positionner facilement les éléments internes */
-    text-align: center;   /* centrer le texte horizontalement */
-    padding: 20px;
-  }
-  
-  /* La page courante (active) est affichée en flex pour centrer verticalement le contenu principal */
-  .page.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* centre verticalement le bloc principal */
-    align-items: center;     /* centre horizontalement */
-  }
-  
-  /* Le titre au milieu de la page d'accueil */
-  .title {
-    font-size: 3em;
-    margin-bottom: 40px;
-  }
-  
-  /* La div qui contient les boutons en bas, côte à côte */
-  .buttons {
-    position: absolute;
-    bottom: 20px;        /* un peu de marge du bas */
-    left: 50%;
-    transform: translateX(-50%); /* pour centrer la zone de boutons */
-    display: flex;
-    gap: 20px;           /* espace horizontal entre les boutons */
-  }
-  
-  /* Styles génériques pour les boutons */
-  button {
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 1em;
-  }
+.page {
+  display: none;        
+  width: 100%;
+  height: 100%;
+  position: relative;   
+  text-align: center;   
+  padding: 20px;
+}
+
+
+.page.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+}
+
+.title {
+  font-size: 80px;
+  margin-bottom: 40px;
+  font-weight: 800;
+  color:$main-color;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 20px;       
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px; 
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.cockpit {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;          
+  pointer-events: none; 
+}
