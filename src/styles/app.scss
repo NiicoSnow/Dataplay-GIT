@@ -200,6 +200,11 @@ button {
   grid-column: 2;
   grid-row: 4;
 }
+.btn-catalogue2 {
+  position: relative;
+  bottom:72px;
+
+}
 @media (max-width: 1400px) {
   .grid-boutons {
     grid-template-rows: repeat(2, 1fr);
