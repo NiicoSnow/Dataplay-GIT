@@ -7,8 +7,8 @@
         "Model": "L-410",
         "Operator": "Bluesky Aviation",
         "Registration": "5Y-BSA",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Kichwa Tembo – Musiara",
@@ -23,7 +23,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Other causes - poor weight distribution"
+        "Crash cause": "Facteur humain - la répartition des masses dans la soute était mauvaise ce qui a entraîné un déséquilibre lors du décollage"
     },
     {
         "Date": "2012-01-24",
@@ -32,8 +32,8 @@
         "Model": "MD-83",
         "Operator": "Swiftair",
         "Registration": "EC-JJS",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Dubai - Kandahar",
@@ -48,7 +48,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor - lack of experience"
+        "Crash cause": "Facteur humain - le pilote avait trop peu d'expérience"
     },
     {
         "Date": "2012-02-08",
@@ -57,10 +57,10 @@
         "Model":  "90 King Air",
         "Operator": "Mônaco Diesel Caminhões e Ônibus",
         "Registration": "PT-OFD",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Executive/Corporate/Business",
         "Survivors": "Yes",
-        "Crash site": "Lake, Sea, Ocean, River",
+        "Crash site": "Mountains",
         "Schedule": "Sao Paulo - Belém",
         "MSN": "LA-118",
         "YOM": 1981,
@@ -73,7 +73,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le copilote était encore en phase d'apprentissage lors de l'accident"
     },
     {
         "Date": "2012-04-20",
@@ -82,8 +82,8 @@
         "Model": "737-200",
         "Operator": "Bhoja Airlines - Bhoja Air",
         "Registration": "AP-BKC",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Karachi - Islamabad",
@@ -98,7 +98,7 @@
         "PAX fatalities": 121,
         "Other fatalities": 0,
         "Total fatalities": 127,
-        "Crash cause": "Human factor - landing during bad weather led to crash"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale, et a pris la décision d'effectuer quand même l'atterrissage"
     },
     {
         "Date": "2012-04-20",
@@ -107,7 +107,7 @@
         "Model":  "90 King Air",
         "Operator": "Private Brazilian",
         "Registration": "PP-WCA",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Private",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -123,7 +123,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 1,
-        "Crash cause": "Human factor"
+        "Crash cause": "Panne mécanique - lors du premier vol, après une maintenance, l'avion a connu une perte de puissance avant de s'écraser"
     },
     {
         "Date": "2012-06-01",
@@ -132,8 +132,8 @@
         "Model": "737-400",
         "Operator": "Sriwijaya Air",
         "Registration": "PK-CJV",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Jakarta - Pontianak",
@@ -148,7 +148,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Weather"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale, ce qui a fait sortir l'avion de la piste après l'atterrissage"
     },
     {
         "Date": "2012-06-03",
@@ -157,8 +157,8 @@
         "Model": "MD-83",
         "Operator": "Dana Air",
         "Registration": "5N-RAM",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
         "Crash site": "City",
         "Schedule": "Abuja - Lagos",
@@ -173,7 +173,7 @@
         "PAX fatalities": 147,
         "Other fatalities": 6,
         "Total fatalities": 159,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - le moteur n°1 (gauche) a connu une perte de puissance peu avant le n°2 (droite)"
     },
     {
         "Date": "2012-07-07",
@@ -190,7 +190,7 @@
         "MSN": "LW-65",
         "YOM": 1973,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 1,
@@ -198,7 +198,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 1,
-        "Crash cause": "Weather"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale"
     },
     {
         "Date": "2012-08-22",
@@ -207,8 +207,8 @@
         "Model": "L-410",
         "Operator": "Mombasa Air Safari",
         "Registration": "5Y-UVP",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Amboseli – Ngerende – Mara North – Ukunda – Mombasa",
@@ -223,7 +223,7 @@
         "PAX fatalities": 2,
         "Other fatalities": 0,
         "Total fatalities": 4,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - le moteur gauche a connu des problèmes de puissance"
     },
     {
         "Date": "2012-10-22",
@@ -232,7 +232,7 @@
         "Model":  "90 King Air",
         "Operator": "Direct Aviation",
         "Registration": "N821DA",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Private",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -240,7 +240,7 @@
         "MSN": "LJ-406",
         "YOM": 1968,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 0,
@@ -248,7 +248,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain -  le pilote a tenté un atterrissage avec une vitesse trop élevée, ce qui a produit une sortie de piste"
     },
     {
         "Date": "2012-10-30",
@@ -257,8 +257,8 @@
         "Model": "L-410",
         "Operator": "Cetraca Aviation Service",
         "Registration": "9Q-CAZ",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Goma - Butembo",
@@ -273,32 +273,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
-    },
-    {
-        "Date": "2012-10-30",
-        "Time": "6H 33M 0S",
-        "Aircraft": "Cessna",
-        "Model": " 560 Citation V",
-        "Operator": "Can-West Corporate Air Charters",
-        "Registration": "C-FBCW",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Positioning",
-        "Survivors": "Yes",
-        "Crash site": "Airport (less than 10 km from airport)",
-        "Schedule": "Edmonton - Edmonton",
-        "MSN": "560-0191",
-        "YOM": 1992,
-        "Flight no.": "",
-        "Country": "Canada",
-        "Region": "North America",
-        "Crew on board": 2,
-        "Crew fatalities": 0,
-        "Pax on board": 0,
-        "PAX fatalities": 0,
-        "Other fatalities": 0,
-        "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale"
     },
     {
         "Date": "2012-12-14",
@@ -315,7 +290,7 @@
         "MSN": "LW-112",
         "YOM": 1974,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 1,
@@ -323,14 +298,14 @@
         "PAX fatalities": 1,
         "Other fatalities": 0,
         "Total fatalities": 2,
-        "Crash cause": "Accident due to the airlines logistical needs"
+        "Crash cause": "Facteur humain - accident du aux demandes de la compagnie"
     },
     {
         "Date": "2013-02-03",
         "Time": "20H 30M 0S",
         "Aircraft": "Beechcraft",
         "Model":  "90 King Air",
-        "Operator": "Z. Air Investimentos e ParticipaÃ§Ãµes",
+        "Operator": "Private",
         "Registration": "PP-AJV",
         "Flight phase": "Flight",
         "Flight type": "Executive/Corporate/Business",
@@ -348,7 +323,7 @@
         "PAX fatalities": 4,
         "Other fatalities": 0,
         "Total fatalities": 5,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote n'était pas assez qualifié"
     },
     {
         "Date": "2013-02-06",
@@ -357,8 +332,8 @@
         "Model": "A320",
         "Operator": "Tunis Air",
         "Registration": "TS-IMB",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Casablanca - Tunis",
@@ -373,7 +348,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Runway excursion - main landing gear failure in grass"
+        "Crash cause": "Panne mécanique - le train d'atterrissage principal a cédé, ce qui a entrainé une sortie de piste"
     },
     {
         "Date": "2013-02-06",
@@ -382,7 +357,7 @@
         "Model":  "90 King Air",
         "Operator": "Sauo Aero Services",
         "Registration": "N555FV",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Training",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -390,7 +365,7 @@
         "MSN": "LW-248",
         "YOM": 1977,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 2,
         "Crew fatalities": 2,
@@ -398,7 +373,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 2,
-        "Crash cause": "Stall after go around attempt"
+        "Crash cause": "Facteur humain - le pilote n'a pas su sortir d'un décrochage après avoir fait un go-around"
     },
     {
         "Date": "2013-03-29",
@@ -423,7 +398,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure - Pilot underestimated the amount of fuel needed for this flight resulting in a fuel failure"
+        "Crash cause": "Facteur humain - la quantité de fuel à bord était trop faible"
     },
     {
         "Date": "2013-07-22",
@@ -432,15 +407,15 @@
         "Model": "737-700",
         "Operator": "Southwest Airlines",
         "Registration": "N753SW",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Nashville – New York",
         "MSN": "29848/400",
         "YOM": 1999,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 5,
         "Crew fatalities": 0,
@@ -448,7 +423,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Hard landing resulting in noe gear collapse"
+        "Crash cause": "Panne mécanique - le train d'atterrissage principal a cédé après un atterrissage trop rapide"
     },
     {
         "Date": "2013-09-19",
@@ -457,15 +432,15 @@
         "Model":  "90 King Air",
         "Operator": "We Fly",
         "Registration": "N191TP",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Pocatello – Idaho Falls",
         "MSN": "LJ-1223",
         "YOM": 1989,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 0,
@@ -473,7 +448,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "The airplane's fuel exhaustion was due to the pilot's inadequate and improper pre- and inflight fuel planning and procedures."
+        "Crash cause": "Facteur humain - la quantité de fuel à bord était trop faible"
     },
     {
         "Date": "2013-11-01",
@@ -482,7 +457,7 @@
         "Model":  "90 King Air",
         "Operator": "J & G Aviation",
         "Registration": "N269JG",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Private",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -490,7 +465,7 @@
         "MSN": "LJ-949",
         "YOM": 1981,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 1,
@@ -498,7 +473,7 @@
         "PAX fatalities": 1,
         "Other fatalities": 0,
         "Total fatalities": 2,
-        "Crash cause": "Too low on fuel during final descent"
+        "Crash cause": "Facteur humain - la quantité de fuel à bord était trop faible"
     },
     {
         "Date": "2014-01-05",
@@ -507,8 +482,8 @@
         "Model": "A320",
         "Operator": "Air India",
         "Registration": "VT-ESH",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Imphal Guwahati – New Delhi",
@@ -523,7 +498,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor - bad decision during landing  "
+        "Crash cause": "Facteur humain - mauvaises décisions pendant l'atterrissage"
     },
     {
         "Date": "2014-01-26",
@@ -532,7 +507,7 @@
         "Model": "737-300",
         "Operator": "Pacific Air Express - Solomon Islands",
         "Registration": "ZK-TLC",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -548,7 +523,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - le verrin de train droit a cédé après l'atterrissage"
     },
     {
         "Date": "2014-01-27",
@@ -557,7 +532,7 @@
         "Model":  "90 King Air",
         "Operator": "Axis Jet",
         "Registration": "N350WA",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Positioning",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -565,7 +540,7 @@
         "MSN": "LJ-762",
         "YOM": 1978,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 2,
         "Crew fatalities": 0,
@@ -573,7 +548,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Panne mécanique - le train principal a cédé lors de l'atterrissage"
     },
     {
         "Date": "2014-02-02",
@@ -582,8 +557,8 @@
         "Model": "A320",
         "Operator": "East Air",
         "Registration": "EY-623",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Moscow – Kulob",
@@ -598,7 +573,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Other causes"
+        "Crash cause": "Panne mécanique - le train principal droit s'est replié dans la neige, le moteur droit a donc tappé le sol"
     },
     {
         "Date": "2014-03-12",
@@ -607,7 +582,7 @@
         "Model":  "90 King Air",
         "Operator": "Ambulancias Aéreas de Colombia",
         "Registration": "HK-4921",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Ambulance",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -623,7 +598,7 @@
         "PAX fatalities": 3,
         "Other fatalities": 0,
         "Total fatalities": 5,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote n'était pas assez formé"
     },
     {
         "Date": "2014-03-13",
@@ -632,15 +607,15 @@
         "Model": "A320",
         "Operator": "US Airways",
         "Registration": "N113UW",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Philadelphia – Fort Lauderdale",
         "MSN": "1141",
         "YOM": 1999,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 5,
         "Crew fatalities": 0,
@@ -648,7 +623,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Substantial damage in an aborted takeoff accident"
+        "Crash cause": "Panne mécanique - un décollage avorté à endommagé la structure de l'avion"
     },
     {
         "Date": "2014-04-29",
@@ -657,7 +632,7 @@
         "Model": "737-400",
         "Operator": "Air Contractors",
         "Registration": "EI-STD",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -673,7 +648,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Brakes failure after landing led to runway excursion"
+        "Crash cause": "Panne mécanique - les freins n'ont pas fonctionnés correctement, ce qui a mené à une sortie de piste"
     },
     {
         "Date": "2014-07-24",
@@ -683,7 +658,7 @@
         "Operator": "Swiftair",
         "Registration": "EC-LTV",
         "Flight phase": "Flight",
-        "Flight type": "Commercial flight",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
         "Crash site": "Desert",
         "Schedule": "Ouagadougou - Algiers",
@@ -698,7 +673,7 @@
         "PAX fatalities": 110,
         "Other fatalities": 0,
         "Total fatalities": 116,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote n'a pas su sortir d'un décrochage"
     },
     {
         "Date": "2014-09-25",
@@ -707,7 +682,7 @@
         "Model":  "90 King Air",
         "Operator": "Remote Area Medical",
         "Registration": "N211PC",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Private",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -715,7 +690,7 @@
         "MSN": "LJ-910",
         "YOM": 1980,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 0,
@@ -723,7 +698,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Panne mécanique - le moteur droit a connu une panne peu après le décollage"
     },
     {
         "Date": "2014-10-25",
@@ -732,7 +707,7 @@
         "Model": "L-410",
         "Operator": "Mango Airlines",
         "Registration": "9Q-COT",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -748,7 +723,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Facteur humain - le pilote n'a pas su sortir d'un décrochage"
     },
     {
         "Date": "2014-12-30",
@@ -757,8 +732,8 @@
         "Model": "737-400",
         "Operator": "Shaheen Air",
         "Registration": "AP-BJN",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Karachi – Lahore",
@@ -773,7 +748,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Other causes"
+        "Crash cause": "Panne mécanique - le train principal droit s'est affaissé et le moteur n°2 (droit) à touché le sol"
     },
     {
         "Date": "2015-01-10",
@@ -782,7 +757,7 @@
         "Model": "737-400",
         "Operator": "Ethiopian Airlines",
         "Registration": "ET-AQV",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -798,7 +773,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Panne mécanique - un pneu a explosé alors que l'avion roulait sur le tarmac"
     },
     {
         "Date": "2015-03-05",
@@ -807,7 +782,7 @@
         "Model": "L-410",
         "Operator": "Icar Air",
         "Registration": "E7-WDT",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -823,7 +798,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - le train avant s'est replié alors que l'avion roulait sur le tarmac"
     },
     {
         "Date": "2015-03-24",
@@ -833,10 +808,10 @@
         "Operator": "Germanwings",
         "Registration": "D-AIPX",
         "Flight phase": "Flight",
-        "Flight type": "Commercial flight",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
         "Crash site": "Mountains",
-        "Schedule": "Barcelona – DÃ¼sseldorf",
+        "Schedule": "Barcelona – Dusseldorf",
         "MSN": "147",
         "YOM": 1990,
         "Flight no.": "",
@@ -848,7 +823,7 @@
         "PAX fatalities": 144,
         "Other fatalities": 0,
         "Total fatalities": 150,
-        "Crash cause": "Human factor - copilot commited suicide"
+        "Crash cause": "Facteur humain - le copilote a enfermé le pilote en dehors du cockpit, avant de se suicider"
     },
     {
         "Date": "2015-03-29",
@@ -857,8 +832,8 @@
         "Model": "A320",
         "Operator": "Air Canada",
         "Registration": "C-FTJP",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Toronto – Halifax",
@@ -873,7 +848,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": " the pilot contacted the air traffic control tower controller and was immediately cleared to land. About 36 seconds later"
+        "Crash cause": "Facteur humain - le pilote n'a pas senti son avion dériver sur le tarmac"
     },
     {
         "Date": "2015-04-25",
@@ -882,8 +857,8 @@
         "Model": "A320",
         "Operator": "Turkish Airlines",
         "Registration": "TC-JPE",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Milan – Istanbul",
@@ -898,7 +873,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Other causes"
+        "Crash cause": "Panne mécanique - le train principal droit s'est arraché lors du touché"
     },
     {
         "Date": "2015-06-07",
@@ -907,7 +882,7 @@
         "Model":  "90 King Air",
         "Operator": "Atlântica Exportação e Importação Ltda",
         "Registration": "PR-AVG",
-        "Flight phase": "Takeoff (climb)",
+        "Flight phase": "Décollage (montée)",
         "Flight type": "Private",
         "Survivors": "No",
         "Crash site": "City",
@@ -923,7 +898,7 @@
         "PAX fatalities": 1,
         "Other fatalities": 0,
         "Total fatalities": 3,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - perte de contrôle juste après le décollage (décrochage)"
     },
     {
         "Date": "2015-06-16",
@@ -933,7 +908,7 @@
         "Operator": "SCAT Airlines",
         "Registration": "LY-FLB",
         "Flight phase": "Parking",
-        "Flight type": "Commercial flight",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Aktau - Mineralnye Vody",
@@ -948,7 +923,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - un feu s'est déclaré à bord, l'appareil était vide"
     },
     {
         "Date": "2015-08-20",
@@ -973,7 +948,7 @@
         "PAX fatalities": 2,
         "Other fatalities": 0,
         "Total fatalities": 4,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote était sur son téléphone, son attention n'était pas sur son environnement de vol"
     },
     {
         "Date": "2015-08-20",
@@ -998,7 +973,7 @@
         "PAX fatalities": 1,
         "Other fatalities": 0,
         "Total fatalities": 3,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote n'a pas appliqué les bonnes procédures au bon moment"
     },
     {
         "Date": "2015-08-28",
@@ -1007,7 +982,7 @@
         "Model": "737-300",
         "Operator": "Cardig Air",
         "Registration": "PK-BBY",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1023,7 +998,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a freiné trop fort sur le tarlmac, cette décélération à détruit le train principal"
     },
     {
         "Date": "2015-10-23",
@@ -1032,8 +1007,8 @@
         "Model": "737-300",
         "Operator": "Peruvian Airlines",
         "Registration": "OB-2040-P",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Lima - Cuzco",
@@ -1048,7 +1023,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote n'était pas formé à atterir sur des aéroports de haute altitude, ça technique n'était pas bonne"
     },
     {
         "Date": "2015-10-26",
@@ -1057,8 +1032,8 @@
         "Model": "737-400",
         "Operator": "Comair - South Africa",
         "Registration": "ZS-OAA",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Port Elizabeth - Johannesburg",
@@ -1073,7 +1048,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote n'a pas su sortir d'un décrochage"
     },
     {
         "Date": "2015-11-03",
@@ -1082,8 +1057,8 @@
         "Model": "737-400",
         "Operator": "Shaheen Air",
         "Registration": "AP-BJO",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Karachi – Lahore",
@@ -1098,7 +1073,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote était sous influence de l'alcool"
     },
     {
         "Date": "2015-11-22",
@@ -1107,8 +1082,8 @@
         "Model": "737-300",
         "Operator": "Avia Traffic Company",
         "Registration": "EX-37005",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Krasnoyarsk – Osh",
@@ -1123,7 +1098,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale, ce qui a mené à une sortie de piste"
     },
     {
         "Date": "2015-11-26",
@@ -1132,8 +1107,8 @@
         "Model": "737-300",
         "Operator": "Magnicharters",
         "Registration": "XA-UNM",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "CancÃºn – Mexico City",
@@ -1148,7 +1123,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Panne mécanique - le verrin de train droit a cédé après l'atterrissage"
     },
     {
         "Date": "2016-01-03",
@@ -1157,7 +1132,7 @@
         "Model":  "90 King Air",
         "Operator": "Supermercados Shibata",
         "Registration": "PP-LMM",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Positioning",
         "Survivors": "No",
         "Crash site": "Mountains",
@@ -1173,7 +1148,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 2,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote était concentré sur un autre avion qui venait d'atterir"
     },
     {
         "Date": "2016-01-28",
@@ -1182,8 +1157,8 @@
         "Model": "MD-83",
         "Operator": "Zagros Airlines",
         "Registration": "EP-ZAB",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Isfahan – Mashhad",
@@ -1198,7 +1173,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a acttivé trop tôt le thrust-reverse, ce qui amené à une sortie de piste"
     },
     {
         "Date": "2016-03-18",
@@ -1207,7 +1182,7 @@
         "Model":  "90 King Air",
         "Operator": "Ciro Nogueira Comercio de Motocicletas",
         "Registration": "PP-JBL",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Executive/Corporate/Business",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1223,7 +1198,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale, ce qui a fait sortir l'avion de la piste après l'atterrissage"
     },
     {
         "Date": "2016-03-19",
@@ -1232,8 +1207,8 @@
         "Model": "737-800",
         "Operator": "FlyDubai",
         "Registration": "A6-FDN",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Dubai - Rostov-on-Don",
@@ -1248,7 +1223,7 @@
         "PAX fatalities": 55,
         "Other fatalities": 0,
         "Total fatalities": 62,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le copilote n'a pas bien réglé le système de bors lors de la remise des gaz après un atterrissage avorté"
     },
     {
         "Date": "2016-04-19",
@@ -1257,7 +1232,7 @@
         "Model":  "90 King Air",
         "Operator": "St Tammany Parish Mosquito Abatement District",
         "Registration": "N7MC",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Spraying (Agricultural)",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1265,7 +1240,7 @@
         "MSN": "LM-106",
         "YOM": 1968,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 2,
         "Crew fatalities": 2,
@@ -1273,7 +1248,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 2,
-        "Crash cause": " the twin engine aircraft descended too low"
+        "Crash cause": "Facteur humain - le pilote a eu l'effet trou noir en vol"
     },
     {
         "Date": "2016-05-19",
@@ -1283,9 +1258,9 @@
         "Operator": "Egyptair",
         "Registration": "SU-GCC",
         "Flight phase": "Flight",
-        "Flight type": "Commercial flight",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
-        "Crash site": "Lake, Sea, Ocean, River",
+        "Crash site": "Sea",
         "Schedule": "Paris – Cairo",
         "MSN": "2088",
         "YOM": 2003,
@@ -1298,7 +1273,7 @@
         "PAX fatalities": 56,
         "Other fatalities": 0,
         "Total fatalities": 66,
-        "Crash cause": "Unknown"
+        "Crash cause": "Panne mécanique - un feu s'est déclaré à bord, l'équipage n'a pas su lutter face aux flammes"
     },
     {
         "Date": "2016-06-06",
@@ -1307,7 +1282,7 @@
         "Model": "560 Citation V Ultra",
         "Operator": "Red Wing Aeroplane Company",
         "Registration": "N145KK",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Private",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1315,7 +1290,7 @@
         "MSN": "560-0276",
         "YOM": 1994,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 2,
         "Crew fatalities": 0,
@@ -1323,7 +1298,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - sortie de piste juste après l'atterrissage due à des conditions météo difficiles"
     },
     {
         "Date": "2016-08-05",
@@ -1332,7 +1307,7 @@
         "Model": "737-400",
         "Operator": "ASL Airlines",
         "Registration": "HA-FAX",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1348,7 +1323,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - sortie de piste juste après l'atterrissage due à des conditions météo difficiles"
     },
     {
         "Date": "2016-09-13",
@@ -1357,7 +1332,7 @@
         "Model": "737-300",
         "Operator": "Trigana Air Service",
         "Registration": "PK-YSY",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1373,7 +1348,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a pris la décision d'atterir sans faire un deuxième passage"
     },
     {
         "Date": "2016-12-04",
@@ -1398,7 +1373,7 @@
         "PAX fatalities": 3,
         "Other fatalities": 0,
         "Total fatalities": 4,
-        "Crash cause": "Weather"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale, et a pris la décision d'effectuer le vol"
     },
     {
         "Date": "2016-12-10",
@@ -1407,8 +1382,8 @@
         "Model": "737-400",
         "Operator": "Safi Airways",
         "Registration": "JY-JAQ",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Herat - Kabul",
@@ -1423,32 +1398,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
-    },
-    {
-        "Date": "2017-01-02",
-        "Time": "12H 20M 0S",
-        "Aircraft": "Let Kunovice",
-        "Model": "L-410",
-        "Operator": "Doren Air Congo",
-        "Registration": "9Q-CZR",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Cargo",
-        "Survivors": "Yes",
-        "Crash site": "Airport (less than 10 km from airport)",
-        "Schedule": "Bukavu – Shabunda",
-        "MSN": "85 13 36",
-        "YOM": 1985,
-        "Flight no.": "",
-        "Country": "Democratic Republic of Congo",
-        "Region": "Africa",
-        "Crew on board": 2,
-        "Crew fatalities": 0,
-        "Pax on board": 0,
-        "PAX fatalities": 0,
-        "Other fatalities": 0,
-        "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - l'avion a été mal entretenu, ce qui a mené à une fatigue structurelle"
     },
     {
         "Date": "2017-01-19",
@@ -1457,10 +1407,10 @@
         "Model":  "90 King Air",
         "Operator": "Hotel Emiliano",
         "Registration": "PR-SOM",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Executive/Corporate/Business",
         "Survivors": "No",
-        "Crash site": "Lake, Sea, Ocean, River",
+        "Crash site": "Ocean",
         "Schedule": "Campo de Marte - Paraty",
         "MSN": "LJ-1809",
         "YOM": 2007,
@@ -1473,7 +1423,7 @@
         "PAX fatalities": 4,
         "Other fatalities": 0,
         "Total fatalities": 5,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale, ce qui a mené à une désorientation spatiale"
     },
     {
         "Date": "2017-03-08",
@@ -1482,15 +1432,15 @@
         "Model": "MD-83",
         "Operator": "Ameristar Jet Charter",
         "Registration": "N786TW",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Detroit - Washington DC",
         "MSN": "53123/1987",
         "YOM": 1992,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 6,
         "Crew fatalities": 0,
@@ -1498,7 +1448,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - La profondeur a été mal entretenue, ce qui l'a fragilisée"
     },
     {
         "Date": "2017-03-28",
@@ -1507,8 +1457,8 @@
         "Model": "737-300",
         "Operator": "Peruvian Airlines",
         "Registration": "OB-2036-P",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Lima - Jauja",
@@ -1523,7 +1473,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - le train principal a cédé lors de l'atterrissage"
     },
     {
         "Date": "2017-04-01",
@@ -1532,8 +1482,8 @@
         "Model": "L-410",
         "Operator": "Eagle Air - Uganda",
         "Registration": "5X-EIV",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Yei - Arua",
@@ -1548,7 +1498,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - l'avion n'a jamais quitté le tarmac à cause d'une panne moteur, ce qui amené à une sortie de piste"
     },
     {
         "Date": "2017-05-27",
@@ -1557,7 +1507,7 @@
         "Model": "L-410",
         "Operator": "Summit Air",
         "Registration": "9N-AKY",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1573,7 +1523,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 2,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote n'a pas su sortir d'un décrochage"
     },
     {
         "Date": "2017-05-31",
@@ -1582,8 +1532,8 @@
         "Model": "737-300",
         "Operator": "Sriwijaya Air",
         "Registration": "PK-CJC",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Ujung Pandang – Sorong – Manokwari",
@@ -1598,7 +1548,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - le pilote a atterri trop vite sur piste humide, ce qui a mené à une sortie de piste"
     },
     {
         "Date": "2017-07-18",
@@ -1607,7 +1557,7 @@
         "Model": "737-300",
         "Operator": "Tri-MG Intra Asia Airlines",
         "Registration": "PK-YGG",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1623,7 +1573,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Panne mécanique - le train d'atterrissage principal a connu une panne et a cédé"
     },
     {
         "Date": "2018-01-13",
@@ -1632,8 +1582,8 @@
         "Model": "737-800",
         "Operator": "Pegasus Airlines",
         "Registration": "TC-CPF",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Ankara – Trabzon",
@@ -1648,7 +1598,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale, ce qui a mené à une sortie de piste"
     },
     {
         "Date": "2018-02-28",
@@ -1657,7 +1607,7 @@
         "Model": "A320",
         "Operator": "Smartlynx Airlines",
         "Registration": "ES-SAN",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Training",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1673,7 +1623,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - L'instructeur n'a pas pris en compte des alertes de pannes"
     },
     {
         "Date": "2018-03-04",
@@ -1682,7 +1632,7 @@
         "Model": "737-300",
         "Operator": "Serve Air",
         "Registration": "9S-ASG",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1698,7 +1648,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote n'a pas su contrôler une glissade de son avion sur le tarmac"
     },
     {
         "Date": "2018-04-20",
@@ -1707,15 +1657,15 @@
         "Model": "MD-83",
         "Operator": "World Atlantic Airlines",
         "Registration": "N807WA",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Chicago - Alexandria",
         "MSN": "53093/2066",
         "YOM": 1993,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 7,
         "Crew fatalities": 0,
@@ -1723,7 +1673,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - Problème du train principal droit"
     },
     {
         "Date": "2018-05-18",
@@ -1732,8 +1682,8 @@
         "Model": "737-200",
         "Operator": "Cubana de Aviación",
         "Registration": "XA-UHZ",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Havana – Holguín",
@@ -1748,7 +1698,7 @@
         "PAX fatalities": 106,
         "Other fatalities": 0,
         "Total fatalities": 112,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - pilote n'était pas assez formé et à pris des risques inutuiles au décollage"
     },
     {
         "Date": "2018-06-14",
@@ -1757,8 +1707,8 @@
         "Model": "MD-83",
         "Operator": "Bravo Airways",
         "Registration": "UR-CPR",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Antalya - Kiev",
@@ -1773,7 +1723,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le piote a fait le choix de poursuivre son atterrissage dans des conditions météo difficiles, ce qui a mené à une sortie de piste"
     },
     {
         "Date": "2018-06-24",
@@ -1781,9 +1731,9 @@
         "Aircraft": "Let Kunovice",
         "Model": "L-410",
         "Operator": "Eagle Air - Guinea",
-        "Registration": "3X-AAJ",
+        "Registration": "3X-AAK",
         "Flight phase": "Flight",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "No",
         "Crash site": "Mountains",
         "Schedule": "Sal - Conakry – Lero",
@@ -1798,7 +1748,7 @@
         "PAX fatalities": 2,
         "Other fatalities": 0,
         "Total fatalities": 4,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale et a tappé une montagne"
     },
     {
         "Date": "2018-06-28",
@@ -1807,7 +1757,7 @@
         "Model":  "90 King Air",
         "Operator": "U.Y. Aviation Private Ltd",
         "Registration": "VT-UPZ",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Test",
         "Survivors": "No",
         "Crash site": "City",
@@ -1823,7 +1773,7 @@
         "PAX fatalities": 2,
         "Other fatalities": 1,
         "Total fatalities": 5,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - le pilote n'a pas su sortir d'un décrochage (causé par une désorientation spatiale due à la météo difficile)"
     },
     {
         "Date": "2018-07-29",
@@ -1832,7 +1782,7 @@
         "Model":  "90 King Air",
         "Operator": "Videplast",
         "Registration": "PP-SZN",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Executive/Corporate/Business",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1848,7 +1798,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 1,
-        "Crash cause": "Unknown"
+        "Crash cause": "Panne mécanique - le train d'atterrissage principal a connu une panne"
     },
     {
         "Date": "2018-09-05",
@@ -1857,7 +1807,7 @@
         "Model":  "90 King Air",
         "Operator": "Gabriel Claudio de Sales",
         "Registration": "PR-GVJ",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Private",
         "Survivors": "Yes",
         "Crash site": "Plain, Valley",
@@ -1873,7 +1823,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a effectué une descente trop rapide par rapport au terrain"
     },
     {
         "Date": "2018-09-09",
@@ -1882,10 +1832,10 @@
         "Model": "L-410",
         "Operator": "South West Aviation",
         "Registration": "UR-TWO",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
-        "Crash site": "Lake, Sea, Ocean, River",
+        "Crash site": "Ocean",
         "Schedule": "Juba - Yirol",
         "MSN": "84 13 28",
         "YOM": 1984,
@@ -1898,7 +1848,7 @@
         "PAX fatalities": 17,
         "Other fatalities": 0,
         "Total fatalities": 20,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale"
     },
     {
         "Date": "2018-09-15",
@@ -1923,7 +1873,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 1,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a effectué une descente trop rapide par rapport au terrain"
     },
     {
         "Date": "2018-10-29",
@@ -1932,10 +1882,10 @@
         "Model": "737 MAX 8",
         "Operator": "Lion Air",
         "Registration": "PK-LQP",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
-        "Crash site": "Lake, Sea, Ocean, River",
+        "Crash site": "Ocean",
         "Schedule": "Jakarta - Pangkal Pinang",
         "MSN": "43000",
         "YOM": 2018,
@@ -1948,7 +1898,7 @@
         "PAX fatalities": 181,
         "Other fatalities": 0,
         "Total fatalities": 189,
-        "Crash cause": "Unknown"
+        "Crash cause": "Panne mécanique - le trim de profondeur était faussé"
     },
     {
         "Date": "2018-12-20",
@@ -1957,7 +1907,7 @@
         "Model": " 560 Citation V",
         "Operator": "Chen Aircrafts",
         "Registration": "N188CW",
-        "Flight phase": "Takeoff (climb)",
+        "Flight phase": "Décollage (montée)",
         "Flight type": "Private",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -1965,7 +1915,7 @@
         "MSN": "560-0148",
         "YOM": 1991,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 1,
@@ -1973,7 +1923,7 @@
         "PAX fatalities": 3,
         "Other fatalities": 0,
         "Total fatalities": 4,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - désorientation spatiale"
     },
     {
         "Date": "2019-03-10",
@@ -1982,8 +1932,8 @@
         "Model": "737 MAX 8",
         "Operator": "Ethiopian Airlines",
         "Registration": "ET-AVJ",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
         "Crash site": "Plain, Valley",
         "Schedule": "Addis Ababa – Nairobi",
@@ -1998,7 +1948,7 @@
         "PAX fatalities": 149,
         "Other fatalities": 0,
         "Total fatalities": 157,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - MCAS défectueux "
     },
     {
         "Date": "2019-04-14",
@@ -2007,7 +1957,7 @@
         "Model": "L-410",
         "Operator": "Summit Air",
         "Registration": "9N-AMH",
-        "Flight phase": "Takeoff (climb)",
+        "Flight phase": "Décollage (montée)",
         "Flight type": "Positioning",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -2023,7 +1973,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 2,
         "Total fatalities": 3,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote a poussé le moteur droit à fond (ce qui a mené l'avion à faire un tonneau vers la droite et a heurter le sol)"
     },
     {
         "Date": "2019-05-24",
@@ -2035,7 +1985,7 @@
         "Flight phase": "Flight",
         "Flight type": "Positioning",
         "Survivors": "No",
-        "Crash site": "Lake, Sea, Ocean, River",
+        "Crash site": "Ocean",
         "Schedule": "Saint Louis - Fort Lauderdale",
         "MSN": "560-0585",
         "YOM": 2001,
@@ -2048,7 +1998,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 1,
-        "Crash cause": "Unknown"
+        "Crash cause": "Panne mécanique - un moteur a connu des problèmes de puisance (selon des avions de chasse envoyé pour évaluer la situation)"
     },
     {
         "Date": "2019-06-21",
@@ -2057,7 +2007,7 @@
         "Model":  "90 King Air",
         "Operator": "Oahu Parachute Center",
         "Registration": "N256TA",
-        "Flight phase": "Takeoff (climb)",
+        "Flight phase": "Décollage (montée)",
         "Flight type": "Skydiving / Paratroopers",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -2065,7 +2015,7 @@
         "MSN": "LJ-256",
         "YOM": 1967,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 1,
@@ -2073,7 +2023,7 @@
         "PAX fatalities": 10,
         "Other fatalities": 0,
         "Total fatalities": 11,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - le pilote n'a pas su sortir d'un décrochage à basse altitude"
     },
     {
         "Date": "2019-08-06",
@@ -2082,8 +2032,8 @@
         "Model": "560XLS Citation Excel",
         "Operator": "Aerowest",
         "Registration": "D-CAWM",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Oslo - Aarhus",
@@ -2098,7 +2048,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - le pilote est arrivé trop vite lors du touché des roues ce qui a mené à une sortie de piste sur 160m"
     },
     {
         "Date": "2019-08-21",
@@ -2107,15 +2057,15 @@
         "Model":  "560XLS Citation Excel",
         "Operator": "Delta Private Jets",
         "Registration": "N91GY",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Oroville - Portland",
         "MSN": "560-5314",
         "YOM": 2003,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 2,
         "Crew fatalities": 0,
@@ -2123,7 +2073,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - le pilote a oublié d'enlever le frein de parking"
     },
     {
         "Date": "2019-08-27",
@@ -2132,7 +2082,7 @@
         "Model": "560XLS Citation Excel",
         "Operator": "Air Charter Services",
         "Registration": "VT-AVV",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Positioning",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -2148,7 +2098,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - manque de préparation au vol"
     },
     {
         "Date": "2019-10-27",
@@ -2173,7 +2123,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - le pilote a sous estimé la météo locale et a pris la décision de tenter un atterrissage d'urgence"
     },
     {
         "Date": "2019-11-21",
@@ -2182,8 +2132,8 @@
         "Model": "737-800",
         "Operator": "Turkish Airlines",
         "Registration": "TC-JGZ",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Istanbul – Odessa",
@@ -2198,7 +2148,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Facteur humain - du vent de travers pendant la descente (et à la verticale de la piste) a mené à une sortie de piste"
     },
     {
         "Date": "2019-12-28",
@@ -2207,8 +2157,8 @@
         "Model": "L-410",
         "Operator": "Air Fast Congo",
         "Registration": "9S-GDX",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Lubumbashi – Kamina",
@@ -2223,7 +2173,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Mauvais état de la piste - Du gravier humide à fait sortir l'avion de la piste, ce qui a détruit le train principal"
     },
     {
         "Date": "2020-01-08",
@@ -2232,8 +2182,8 @@
         "Model": "737-800",
         "Operator": "Ukraine International Airlines",
         "Registration": "UR-PSR",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
         "Crash site": "Plain, Valley",
         "Schedule": "Tehran - Kiev",
@@ -2248,7 +2198,7 @@
         "PAX fatalities": 167,
         "Other fatalities": 0,
         "Total fatalities": 176,
-        "Crash cause": " Sea"
+        "Crash cause": "Abattu - des tirs de roquettes ont endommagés le matériel embarqué, ce qui a mené au crash"
     },
     {
         "Date": "2020-01-27",
@@ -2257,8 +2207,8 @@
         "Model": "MD-83",
         "Operator": "Caspian Airlines",
         "Registration": "EP-CPZ",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Tehran - Bandar-e Mahshahr",
@@ -2273,7 +2223,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unstabilized approach led to a runway overrun"
+        "Crash cause": "Facteur humain - le pilote a poursuivi son atterrisage (malgré de forts vents de travers), ce qui a mené à rouler au-delà de la piste"
     },
     {
         "Date": "2020-05-22",
@@ -2282,8 +2232,8 @@
         "Model": "A320",
         "Operator": "Pakistan International Airlines - PIA",
         "Registration": "AP-BLD",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "City",
         "Schedule": "Lahore - Karachi",
@@ -2298,7 +2248,7 @@
         "PAX fatalities": 89,
         "Other fatalities": 1,
         "Total fatalities": 98,
-        "Crash cause": "Human factor - Landing with landing gear still retracted"
+        "Crash cause": "Facteur humain - le pilote a atterri avec le train rentré"
     },
     {
         "Date": "2020-08-07",
@@ -2307,8 +2257,8 @@
         "Model": "737-800",
         "Operator": "Air India Express",
         "Registration": "VT-AXH",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Dubai - Kozhikode",
@@ -2323,7 +2273,7 @@
         "PAX fatalities": 19,
         "Other fatalities": 0,
         "Total fatalities": 21,
-        "Crash cause": "Mechanical failure - engine failure"
+        "Crash cause": "Panne mécanique - un moteur a rencontré une panne"
     },
     {
         "Date": "2020-08-13",
@@ -2332,7 +2282,7 @@
         "Model": "L-410",
         "Operator": "Doren Air Congo",
         "Registration": "9S-GEN",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "No",
         "Crash site": "Mountains",
@@ -2348,7 +2298,7 @@
         "PAX fatalities": 2,
         "Other fatalities": 0,
         "Total fatalities": 4,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - mauvaise interprétation de la météo locale (brouillard épais)"
     },
     {
         "Date": "2020-12-02",
@@ -2357,8 +2307,8 @@
         "Model": "737-500",
         "Operator": "Air Djibouti",
         "Registration": "EY-560",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Djibouti – Hargeisa – Garowe – Mogadishu",
@@ -2373,7 +2323,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Human factor"
+        "Crash cause": "Panne mécanique - le train principal droit s'est replié lors du touché"
     },
     {
         "Date": "2021-01-09",
@@ -2390,7 +2340,7 @@
         "MSN": "560-0035",
         "YOM": 1989,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 1,
@@ -2398,7 +2348,7 @@
         "PAX fatalities": 1,
         "Other fatalities": 0,
         "Total fatalities": 2,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - problème de communication avec les opérateurs dans la tour"
     },
     {
         "Date": "2021-01-19",
@@ -2407,7 +2357,7 @@
         "Model": "737-400",
         "Operator": "West Atlantic",
         "Registration": "G-JMCY",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -2423,7 +2373,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - atterrissage difficile après avoir rencontré des turbulences dans la descente finale"
     },
     {
         "Date": "2021-03-02",
@@ -2432,8 +2382,8 @@
         "Model": "L-410",
         "Operator": "South Supreme Airlines",
         "Registration": "HK-4274",
-        "Flight phase": "Takeoff (climb)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Décollage (montée)",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Juba - Pieri - Yuai - Juba",
@@ -2448,7 +2398,7 @@
         "PAX fatalities": 8,
         "Other fatalities": 0,
         "Total fatalities": 10,
-        "Crash cause": "Unknown"
+        "Crash cause": "Panne mécanique - un des moteurs a rencontré une panne"
     },
     {
         "Date": "2021-03-20",
@@ -2457,7 +2407,7 @@
         "Model": "737-400",
         "Operator": "Trigana Air Service",
         "Registration": "PK-YSF",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -2473,7 +2423,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - Le moteur n°2 a connu une panne"
     },
     {
         "Date": "2021-06-19",
@@ -2482,7 +2432,7 @@
         "Model": "L-410",
         "Operator": "DOSAAF",
         "Registration": "RF-94603",
-        "Flight phase": "Takeoff (climb)",
+        "Flight phase": "Décollage (montée)",
         "Flight type": "Skydiving / Paratroopers",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -2498,7 +2448,7 @@
         "PAX fatalities": 2,
         "Other fatalities": 0,
         "Total fatalities": 4,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - le moteur n°2 (droite) a connu une panne peu après le décollage"
     },
     {
         "Date": "2021-07-02",
@@ -2507,15 +2457,15 @@
         "Model": "737-200",
         "Operator": "Transair",
         "Registration": "N810TA",
-        "Flight phase": "Takeoff (climb)",
+        "Flight phase": "Décollage (montée)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
-        "Crash site": "Lake, Sea, Ocean, River",
+        "Crash site": "Ocean",
         "Schedule": "Honolulu – Kahului",
         "MSN": "21116/427",
         "YOM": 1975,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 2,
         "Crew fatalities": 0,
@@ -2523,7 +2473,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - un moteur a connu des problèmes de puisance"
     },
     {
         "Date": "2021-07-10",
@@ -2540,7 +2490,7 @@
         "MSN": "LJ-915",
         "YOM": 1980,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 1,
@@ -2548,7 +2498,7 @@
         "PAX fatalities": 1,
         "Other fatalities": 0,
         "Total fatalities": 2,
-        "Crash cause": "Unknown"
+        "Crash cause": "Problème mécanique - fatigue de la structure de l'aile"
     },
     {
         "Date": "2021-07-18",
@@ -2557,8 +2507,8 @@
         "Model":  "90 King Air",
         "Operator": "Aspa Servicios",
         "Registration": "N333WW",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "San Luis PotosÃ­ – Durango",
@@ -2573,7 +2523,7 @@
         "PAX fatalities": 2,
         "Other fatalities": 0,
         "Total fatalities": 3,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - pilote manquait d'entrainement"
     },
     {
         "Date": "2021-09-02",
@@ -2582,7 +2532,7 @@
         "Model": "560XLS Citation Excel",
         "Operator": "Brook Haven Properties",
         "Registration": "N560AR",
-        "Flight phase": "Takeoff (climb)",
+        "Flight phase": "Décollage (montée)",
         "Flight type": "Executive/Corporate/Business",
         "Survivors": "No",
         "Crash site": "City",
@@ -2590,7 +2540,7 @@
         "MSN": "560-6026",
         "YOM": 2009,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 2,
         "Crew fatalities": 2,
@@ -2598,7 +2548,7 @@
         "PAX fatalities": 2,
         "Other fatalities": 0,
         "Total fatalities": 4,
-        "Crash cause": " 2021"
+        "Crash cause": "Facteur humain - a heurté une ligne haute tension peu après le décollage"
     },
     {
         "Date": "2021-09-12",
@@ -2607,8 +2557,8 @@
         "Model": "L-410",
         "Operator": "SiLA-Avia",
         "Registration": "RA-67042",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Commercial flight",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Vol commercial",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "Irkutsk – Kazashinskoye",
@@ -2623,7 +2573,7 @@
         "PAX fatalities": 3,
         "Other fatalities": 0,
         "Total fatalities": 4,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - pilote n'avait pas qualification au vol IFR/de nuit"
     },
     {
         "Date": "2021-10-10",
@@ -2631,8 +2581,8 @@
         "Aircraft": "Let Kunovice",
         "Model": "L-410",
         "Operator": "DOSAAF",
-        "Registration": "RF-95491",
-        "Flight phase": "Takeoff (climb)",
+        "Registration": "RF-94591",
+        "Flight phase": "Décollage (montée)",
         "Flight type": "Skydiving / Paratroopers",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -2648,7 +2598,7 @@
         "PAX fatalities": 14,
         "Other fatalities": 0,
         "Total fatalities": 16,
-        "Crash cause": "Technical failure"
+        "Crash cause": "Panne mécanique - le moteur n°1 (gauche) a connu une panne"
     },
     {
         "Date": "2021-11-05",
@@ -2657,8 +2607,8 @@
         "Model":  "90 King Air",
         "Operator": "PEC Taxi Aereo",
         "Registration": "PT-ONJ",
-        "Flight phase": "Landing (descent or approach)",
-        "Flight type": "Charter/Taxi (Non Commercial flight)",
+        "Flight phase": "Atterrissage (descente ou approche)",
+        "Flight type": "Charter/Taxi (Non Vol commercial)",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
         "Schedule": "GoiÃ¢nia – Caratinga",
@@ -2673,16 +2623,16 @@
         "PAX fatalities": 3,
         "Other fatalities": 0,
         "Total fatalities": 5,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - collision avec ligne haute tension pendant la descente"
     },
     {
         "Date": "2021-11-15",
         "Time": "12H 45M 0S",
         "Aircraft": "Beechcraft",
         "Model":  "90 King Air",
-        "Operator": "N290KA LLC",
+        "Operator": "N290KA",
         "Registration": "N290KA",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Private",
         "Survivors": "No",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -2690,7 +2640,7 @@
         "MSN": "LW-59",
         "YOM": 1973,
         "Flight no.": "",
-        "Country": "United States of America",
+        "Country": "USA",
         "Region": "North America",
         "Crew on board": 1,
         "Crew fatalities": 1,
@@ -2698,7 +2648,7 @@
         "PAX fatalities": 1,
         "Other fatalities": 0,
         "Total fatalities": 2,
-        "Crash cause": "Unknown"
+        "Crash cause": "Facteur humain - Pilote n'a pas su sortir d'un décrochage à basse altitude"
     },
     {
         "Date": "2022-02-14",
@@ -2707,7 +2657,7 @@
         "Model": "L-410",
         "Operator": "Doren Air Congo",
         "Registration": "9S-GFA",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Cargo",
         "Survivors": "Yes",
         "Crash site": "Airport (less than 10 km from airport)",
@@ -2723,7 +2673,7 @@
         "PAX fatalities": 0,
         "Other fatalities": 0,
         "Total fatalities": 0,
-        "Crash cause": "Unknown"
+        "Crash cause": "Panne mécanique - un feu c'est déclaré dans la soute (peu de temps après le décollage)"
     },
     {
         "Date": "2022-03-21",
@@ -2733,7 +2683,7 @@
         "Operator": "China Eastern Airlines",
         "Registration": "B-1791",
         "Flight phase": "Flight",
-        "Flight type": "Commercial flight",
+        "Flight type": "Vol commercial",
         "Survivors": "No",
         "Crash site": "Mountains",
         "Schedule": "Kunming - Guangzhou",
@@ -2748,7 +2698,7 @@
         "PAX fatalities": 123,
         "Other fatalities": 0,
         "Total fatalities": 132,
-        "Crash cause": "Unknown"
+        "Crash cause": "Inconnue - rien n'était problématique au niveau de l'avion, de la communication radio, de la météo ou du fret embarqué"
     },
     {
         "Date": "2022-03-28",
@@ -2757,7 +2707,7 @@
         "Model":  "90 King Air",
         "Operator": "Bank of Utah",
         "Registration": "N426EM",
-        "Flight phase": "Landing (descent or approach)",
+        "Flight phase": "Atterrissage (descente ou approche)",
         "Flight type": "Private",
         "Survivors": "Yes",
         "Crash site": "City",
@@ -2773,7 +2723,7 @@
         "PAX fatalities": 2,
         "Other fatalities": 0,
         "Total fatalities": 3,
-        "Crash cause": "Unknown"
+        "Crash cause": "Panne mécanique - les moteurs ont rencontrés des pannes (fumée)"
     }
     
 ]}
