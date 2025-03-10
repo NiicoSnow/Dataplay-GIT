@@ -1,40 +1,59 @@
-console.info('Hello world');
-// Dès que le DOM est chargé, on met en place les événements
 document.addEventListener("DOMContentLoaded", () => {
-    // Sélection des sections
-    const accueilSection     = document.querySelector(".accueil");
-    const catalogueSection   = document.querySelector(".catalogue");
-    const comparaisonSection = document.querySelector(".comparaison");
-  
-    // Boutons sur la page d'accueil
-    const btnCatalogue    = document.querySelector(".btn-catalogue");
-    const btnComparaison  = document.querySelector(".btn-comparaison");
-  
-    // Boutons "Retour à l'accueil" depuis Catalogue et Comparaison
-    const btnAccueilListe = document.querySelectorAll(".btn-accueil");
-  
-    // Quand on clique sur le bouton Catalogue
+  // Récupération des sections
+  const accueilSection     = document.querySelector(".accueil");
+  const catalogueSection   = document.querySelector(".catalogue");
+  const comparaisonSection = document.querySelector(".comparaison");
+
+  // Boutons existants (exemple)
+  const btnCatalogue    = document.querySelector(".btn-catalogue");    // Accueil => Catalogue
+  const btnComparaison  = document.querySelector(".btn-comparaison");  // Accueil => Comparaison
+  const btnAccueilListe = document.querySelectorAll(".btn-accueil");   // Retour à l'accueil
+
+  // == NOUVEAUX BOUTONS pour naviguer Catalogue <=> Comparaison ==
+  const btnComparaison2 = document.querySelector(".btn-comparaison2"); // Catalogue => Comparaison
+  const btnCatalogue2   = document.querySelector(".btn-catalogue2");   // Comparaison => Catalogue
+
+  // --- Écouteurs existants (à adapter selon votre projet) ---
+  if (btnCatalogue) {
     btnCatalogue.addEventListener("click", () => {
-      // On enlève la classe active partout
       accueilSection.classList.remove("active");
       comparaisonSection.classList.remove("active");
-      // On l'ajoute sur la page Catalogue
       catalogueSection.classList.add("active");
     });
-  
-    // Quand on clique sur le bouton Comparaison
+  }
+
+  if (btnComparaison) {
     btnComparaison.addEventListener("click", () => {
       accueilSection.classList.remove("active");
       catalogueSection.classList.remove("active");
       comparaisonSection.classList.add("active");
     });
-  
-    // Pour tous les boutons "Retour à l'accueil"
-    btnAccueilListe.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        catalogueSection.classList.remove("active");
-        comparaisonSection.classList.remove("active");
-        accueilSection.classList.add("active");
-      });
+  }
+
+  btnAccueilListe.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      catalogueSection.classList.remove("active");
+      comparaisonSection.classList.remove("active");
+      accueilSection.classList.add("active");
     });
   });
+
+  // --- Écouteurs pour naviguer directement de Catalogue à Comparaison, et inversement ---
+  if (btnComparaison2) {
+    btnComparaison2.addEventListener("click", () => {
+      // On enlève .active à la section Catalogue
+      catalogueSection.classList.remove("active");
+      // On l'ajoute à la section Comparaison
+      comparaisonSection.classList.add("active");
+    });
+  }
+
+  if (btnCatalogue2) {
+    btnCatalogue2.addEventListener("click", () => {
+      // On enlève .active à la section Comparaison
+      comparaisonSection.classList.remove("active");
+      // On l'ajoute à la section Catalogue
+      catalogueSection.classList.add("active");
+    });
+  }
+});
