@@ -3,63 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/app.js" defer></script>
+
     <title>Crash Aérien</title>
 </head>
 <body>
     <h1>Liste des Accidents d'Avion</h1>
-    <input type="text" id="search" placeholder="Rechercher par pays..." oninput="filterData()">
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Avion</th>
-                <th>Opérateur</th>
-                <th>Lieu</th>
-                <th>Cause</th>
-            </tr>
-        </thead>
-        <tbody id="data-table"></tbody>
-    </table>
+    <select id="choix_aircraft" onchange="updateDates(); updateModels(); updateOperators(); filterData();">
+        <option value="">Tous les constructeurs</option>
+    </select>
+    <select id="choix_modele" onchange="updateImage(); updateDates(); updateOperators(); filterData();">
+        <option value="">Tous les modèles</option>
+    </select>
+    <select id="choix_operator" onchange="updateDates(); filterData();">
+        <option value="">Toutes les compagnies</option>
+    </select>
+    <select id="choix_date" onchange="filterData();">
+        <option value="">Toutes les dates</option>
+    </select>
+    
+    <p><strong>Passagers à bord : </strong><span id="pax_board">/</span></p>
+    <p><strong>Passagers décédés : </strong><span id="pax">/</span></p>
+    <p><strong>Cause de l'accident : </strong><span id="cause">/</span></p>
+    <p><strong>Pays : </strong><span id="pays">/</span></p>
 
-    <script>
-        let crashData = [];
-
-        // Charger le fichier JSON après le chargement complet de la page
-        window.onload = function () {
-            fetch('crash_save2.json')
-                .then(response => response.json())
-                .then(data => {
-                    crashData = data.crash; // Stocke les données dans la variable
-                    displayData(crashData);
-                })
-                .catch(error => console.error("Erreur de chargement du fichier JSON :", error));
-        };
-
-        // Fonction pour afficher les données dans le tableau
-        function displayData(data) {
-            const tableBody = document.getElementById('data-table');
-            tableBody.innerHTML = ""; // Nettoie le tableau avant d'afficher les nouvelles données
-            data.forEach(crash => {
-                const row = `<tr>
-                    <td>${crash.Date}</td>
-                    <td>${crash.Aircraft}</td>
-                    <td>${crash.Operator}</td>
-                    <td>${crash["Crash location"]}, ${crash.Country}</td>
-                    <td>${crash["Crash cause"]}</td>
-                </tr>`;
-                tableBody.innerHTML += row;
-            });
-        }
-
-        // Fonction pour filtrer les résultats
-        function filterData() {
-            const searchTerm = document.getElementById('search').value.toLowerCase();
-            const filteredData = crashData.filter(crash => 
-                crash.Country.toLowerCase().includes(searchTerm) || 
-                crash["Crash location"].toLowerCase().includes(searchTerm)
-            );
-            displayData(filteredData);
-        }
-    </script>
+    <img id="aircraft_image" src="" alt="Image du modèle d'avion" style="display:none; width:300px;">
+    <img id="aircraft_image_dessus" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
+    
+    
 </body>
 </html>
