@@ -47,7 +47,7 @@ html, body {
 
 .buttons {
   position: absolute;
-  bottom: 72px;       
+  bottom: 48px;       
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -57,6 +57,7 @@ html, body {
   border: 10px solid $main-color;
   border-radius: 15px;
   height: 55px;
+  width: 230px;
   line-height: 5px;
   font-weight: 600;
   color: $main-color;
@@ -66,13 +67,13 @@ html, body {
   border: 5px solid $main-color;
   border-radius: 15px;
   height: 55px;
+  width: 198px;
   line-height: 5px;
   font-weight: 600;
   color: $main-color;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 button {
-  padding: 10px 20px;
   cursor: pointer;
   font-size: 1em;
 }
@@ -83,7 +84,6 @@ button {
   width: 100%;
   height: auto;
   z-index: -1;          
-  pointer-events: none; 
 }
 .grid-boutons {
   display: grid;
@@ -92,6 +92,9 @@ button {
     padding-right: 96px;
     column-gap: 48px;
     width: 100%;
+    height: 200px;
+    align-items: center;
+
 }
 .btn-catalogue {
   grid-column: 2;
@@ -107,10 +110,78 @@ button {
   display: flex;
   justify-content: center; 
   align-items: center;
-  padding-top: 15px;
+  padding-top: 5px;
   color: #FF7474;
   background-color: $main-color;
   border:none;
   position: absolute;
-  bottom:20px
+  bottom:20px;
+  z-index: 10;
+}
+.flex-boutons{
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+  gap: 363px;
+}
+.btn-modele {
+  align-self: end;
+  margin-bottom:48px;
+  justify-self: center;
+}
+.btn-compagnie {
+  align-self: end;
+  margin-bottom:48px;
+  justify-self: center;
+}
+.btn-constructeur {
+  align-self: end;
+  justify-self: center;
+}
+.btn-date {
+  align-self: end;
+  justify-self: center;
+}
+.btn-comparaison2 {
+    justify-self: center;
+}
+@media (max-width: 1400px) {
+  .grid-boutons {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .btn-constructeur {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
+    margin:0;
+    align-self: end;
+  }
+  .btn-modele {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    margin:0;
+    align-self: baseline;
+  }
+  .btn-comparaison2 {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    margin:0;
+  }
+  .btn-compagnie {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self:baseline;
+    margin:0;
+    align-self: end;
+  }
+  .btn-date {
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: center;
+    margin:0;
+    align-self: baseline;
+  }
 }
