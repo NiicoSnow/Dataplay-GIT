@@ -213,6 +213,15 @@ button {
   position: relative;
   bottom:72px
 }
+.btn-deco:hover {
+  background-color: rgb(211, 211, 211);
+}
+.btn-deco2:hover {
+  background-color: rgb(211, 211, 211);
+}
+.btn-accueil:hover {
+  background-color: #174d84;
+}
 @media (max-width: 1400px) {
   .grid-boutons {
     grid-template-rows: repeat(2, 1fr);
