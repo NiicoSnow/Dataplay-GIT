@@ -15,11 +15,18 @@
 <body>
      <!-- Section Accueil (visible par défaut) -->
   <section class="page accueil active">
-    <h1 class="title">LOSTFLIGHTS</h1>
+
+    <div class="title__container">
+      <div class="title__hidden"></div>
+      <h1 class="title">LOSTFLIGHTS</h1>
+    </div>
+
     <div class="buttons flex-boutons">
-      <button class="btn-catalogue btn-deco">Catalogue</button>
+      <button id="catalogue" class="btn-catalogue btn-deco">Catalogue</button>
       <button class="btn-comparaison btn-deco">Comparaison</button>
     </div> 
+
+    <div class="bottom__hidden"></div>
   </section>
 
   <!-- Section Catalogue (cachée par défaut) -->
@@ -42,7 +49,7 @@
         <p>info</p>
       </div>
     </div>
-    <button class="btn-accueil">▼</button>
+    <button id="accueil" class="btn-accueil">▼</button>
     <div class="buttons grid-boutons">
       <button class="btn-constructeur btn-deco2">Constructeur</button>
       <button class="btn-modele btn-deco2">Modèle</button>
