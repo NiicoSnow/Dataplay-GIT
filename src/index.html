@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  <script src="../scripts/app.js" defer></script>
+  <script src="scripts/app.js" defer></script>
 </head>
 <body>
      <!-- Section Accueil (visible par défaut) -->
@@ -25,16 +25,16 @@
   <!-- Section Catalogue (cachée par défaut) -->
   <section class="page catalogue">
     <h1>Liste des Accidents d'Avion</h1>
-    <select id="choix_aircraft" onchange="updateDates(); updateModels(); updateOperators(); filterData();">
+    <select id="choix_aircraft">
         <option value="">Tous les constructeurs</option>
     </select>
-    <select id="choix_modele" onchange="updateImage(); updateDates(); updateOperators(); filterData();">
+    <select id="choix_modele">
         <option value="">Tous les modèles</option>
     </select>
-    <select id="choix_operator" onchange="updateDates(); filterData();">
+    <select id="choix_operator">
         <option value="">Toutes les compagnies</option>
     </select>
-    <select id="choix_date" onchange="filterData();">
+    <select id="choix_date">
         <option value="">Toutes les dates</option>
     </select>
     
@@ -50,6 +50,11 @@
 
     <img id="aircraft_image" src="" alt="Image du modèle d'avion" style="display:none; width:300px;">
     <img id="aircraft_image_dessus" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
+
+    <button class="btn-accueil">▼</button>
+    <div class="buttons flex-boutons">
+      <button class="btn-catalogue2 btn-deco">Comparaison</button>
+    </div>
   </section>
 
   <!-- Section Comparaison (cachée par défaut) -->

@@ -70,39 +70,39 @@ let allDates = new Set();
 
 // Associer les modèles d'avion aux URL des images correspondantes
 const aircraftImages = {
-    "A320": "../assets/images/a320.webp",
-    "90 King Air": "../assets/images/90KA.webp",
-    "737-200": "../assets/images/737.webp",
-    "737-400": "../assets/images/737.webp",
-    "737-700": "../assets/images/737.webp",
-    "737-300": "../assets/images/737.webp",
-    "737-800": "../assets/images/737.webp",
-    "737 MAX 8": "../assets/images/737.webp",
-    "737-500": "../assets/images/737.webp",
-    " 560 Citation V": "../assets/images/560.webp",
-    "560 Citation V Ultra": "../assets/images/560.webp",
-    " 560 Citation Encore": "../assets/images/560.webp",
-    "560XLS Citation Excel": "../assets/images/560.webp",
-    "L-410": "../assets/images/410.webp",
-    "MD-83": "../assets/images/MD83.webp"
+    "A320": "assets/images/a320.webp",
+    "90 King Air": "assets/images/90KA.webp",
+    "737-200": "assets/images/737.webp",
+    "737-400": "assets/images/737.webp",
+    "737-700": "assets/images/737.webp",
+    "737-300": "assets/images/737.webp",
+    "737-800": "assets/images/737.webp",
+    "737 MAX 8": "assets/images/737.webp",
+    "737-500": "assets/images/737.webp",
+    " 560 Citation V": "assets/images/560.webp",
+    "560 Citation V Ultra": "assets/images/560.webp",
+    " 560 Citation Encore": "assets/images/560.webp",
+    "560XLS Citation Excel": "assets/images/560.webp",
+    "L-410": "assets/images/410.webp",
+    "MD-83": "assets/images/MD83.webp"
 };
 
 const aircraftImagesUpper = {
-    "A320": "../assets/images/a320D.webp",
-    "90 King Air": "../assets/images/90KAD.webp",
-    "737-200": "../assets/images/737D.webp",
-    "737-400": "../assets/images/737D.webp",
-    "737-700": "../assets/images/737D.webp",
-    "737-300": "../assets/images/737D.webp",
-    "737-800": "../assets/images/737D.webp",
-    "737 MAX 8": "../assets/images/737D.webp",
-    "737-500": "../assets/images/737D.webp",
-    " 560 Citation V": "../assets/images/560D.webp",
-    "560 Citation V Ultra": "../assets/images/560D.webp",
-    " 560 Citation Encore": "../assets/images/560D.webp",
-    "560XLS Citation Excel": "../assets/images/560D.webp",
-    "L-410": "../assets/images/410D.webp",
-    "MD-83": "../assets/images/MD83D.webp"
+    "A320": "assets/images/a320D.webp",
+    "90 King Air": "assets/images/90KAD.webp",
+    "737-200": "assets/images/737D.webp",
+    "737-400": "assets/images/737D.webp",
+    "737-700": "assets/images/737D.webp",
+    "737-300": "assets/images/737D.webp",
+    "737-800": "assets/images/737D.webp",
+    "737 MAX 8": "assets/images/737D.webp",
+    "737-500": "assets/images/737D.webp",
+    " 560 Citation V": "assets/images/560D.webp",
+    "560 Citation V Ultra": "assets/images/560D.webp",
+    " 560 Citation Encore": "assets/images/560D.webp",
+    "560XLS Citation Excel": "assets/images/560D.webp",
+    "L-410": "assets/images/410D.webp",
+    "MD-83": "assets/images/MD83D.webp"
 };
 
 window.onload = function () {
@@ -261,6 +261,7 @@ function updateOperators() {
 }
 
 function updateDates() {
+  console.log('test');
     const selectedOperator = document.getElementById('choix_operator').value;
     const optDate = document.getElementById('choix_date');
     optDate.innerHTML = '<option value="">Toutes les dates</option>';
@@ -297,3 +298,7 @@ function updateImage() {
     }
 }
 
+document.querySelector('#choix_aircraft').addEventListener('change', () => updateModels(), updateOperators(), updateDates(), filterData())
+document.querySelector('#choix_modele').addEventListener('change', () => updateOperators(), updateDates(), filterData())
+document.querySelector('#choix_operator').addEventListener('change', () => updateDates(), filterData())
+document.querySelector('#choix_date').addEventListener('change', () => filterData())
