@@ -1,3 +1,4 @@
+"use strict"
 document.addEventListener("DOMContentLoaded", () => {
   // Récupération des sections
   const accueilSection     = document.querySelector(".accueil");
