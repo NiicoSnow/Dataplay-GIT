@@ -172,8 +172,9 @@ button {
   }
 }
 .info-DA {
-  height: auto;
+  height: fit-content;
   width: auto;
+  padding: 12px;
   border: 10px solid $main-color;
   background-color: $second-color;
 
@@ -219,11 +220,15 @@ button {
   background-color: #174d84;
 }
 #aircraft_image{
-  align-items: end;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 #aircraft_image_dessus{
   grid-column: 2;
+  grid-row: 1 / -1;
   justify-self: center;
+  align-self: center;
 }
 @media (max-width: 1400px) {
   .grid-boutons {
