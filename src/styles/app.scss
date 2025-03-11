@@ -272,4 +272,7 @@ button {
     flex-direction: column; 
     gap: 24px; 
   }
+  .btn-deco{
+    border: 5px solid $main-color;
+  }
 }
