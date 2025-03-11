@@ -24,32 +24,32 @@
 
   <!-- Section Catalogue (cachée par défaut) -->
   <section class="page catalogue">
-    <div class="marquelogo">
-      <p>Marque/Modèle + logo</p>
-      <img src="" alt="">
-    </div>
-    <div class="grid-info">
-      <div class="info-DA info-1">
-        <p>info</p>
-      </div>
-      <div class="info-DA info-2">
-        <p>info</p>
-      </div>
-      <div class="info-DA info-3">
-        <p>info</p>
-      </div>
-      <div class="info-DA info-4">
-        <p>info</p>
-      </div>
-    </div>
-    <button class="btn-accueil">▼</button>
-    <div class="buttons grid-boutons">
-      <button class="btn-constructeur btn-deco2">Constructeur</button>
-      <button class="btn-modele btn-deco2">Modèle</button>
-      <button class="btn-comparaison2 btn-deco">Comparaison</button>
-      <button class="btn-compagnie btn-deco2">Compagnie</button>
-      <button class="btn-date btn-deco2">Date</button>
-    </div>
+    <h1>Liste des Accidents d'Avion</h1>
+    <select id="choix_aircraft" onchange="updateDates(); updateModels(); updateOperators(); filterData();">
+        <option value="">Tous les constructeurs</option>
+    </select>
+    <select id="choix_modele" onchange="updateImage(); updateDates(); updateOperators(); filterData();">
+        <option value="">Tous les modèles</option>
+    </select>
+    <select id="choix_operator" onchange="updateDates(); filterData();">
+        <option value="">Toutes les compagnies</option>
+    </select>
+    <select id="choix_date" onchange="filterData();">
+        <option value="">Toutes les dates</option>
+    </select>
+    
+    <p><strong>Immatriculation : </strong><span id="immatriculation">/</span></p>
+    <p><strong>Année de production : </strong><span id="YOM">/ </span></p>
+    <p><strong>Nombre d'années en service : </strong><span id="nbAnnee">/</span></p>
+    <p><strong>Équipage à bord : </strong><span id="crew_board">/</span></p>
+    <p><strong>Membres de l'équipage décédés : </strong><span id="crew">/</span></p>
+    <p><strong>Passagers à bord : </strong><span id="pax_board">/</span></p>
+    <p><strong>Passagers décédés : </strong><span id="pax">/</span></p>
+    <p><strong>Cause de l'accident : </strong><span id="cause">/</span></p>
+    <p><strong>Pays : </strong><span id="pays">/</span></p>
+
+    <img id="aircraft_image" src="" alt="Image du modèle d'avion" style="display:none; width:300px;">
+    <img id="aircraft_image_dessus" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
   </section>
 
   <!-- Section Comparaison (cachée par défaut) -->
