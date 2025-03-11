@@ -106,7 +106,7 @@ const aircraftImagesUpper = {
 };
 
 window.onload = function () {
-    fetch('crash_save2.json')
+    fetch('../assets/crash_save2.json')
         .then(response => response.json())
         .then(data => {
             crashData = data.crash;
