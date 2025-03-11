@@ -172,13 +172,10 @@ button {
   }
 }
 .info-DA {
-  display: flex;
-  height: 125px;
-  width: 300px;
+  height: auto;
+  width: auto;
   border: 10px solid $main-color;
   background-color: $second-color;
-  justify-content: center;
-  align-items: center;
 
   p {
     color: black;
@@ -186,12 +183,11 @@ button {
 }
 .grid-info {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,auto);
   margin-right: 160px;
   margin-left:160px;
   margin-bottom: 100px;
-  column-gap: 500px;
 }
 .info-1 {
   grid-column: 1;
@@ -202,7 +198,7 @@ button {
   grid-row: 3;
 }
 .info-3 {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 2;
 }
 .info-4 {
@@ -221,6 +217,13 @@ button {
 }
 .btn-accueil:hover {
   background-color: #174d84;
+}
+#aircraft_image{
+  align-items: end;
+}
+#aircraft_image_dessus{
+  grid-column: 2;
+  justify-self: center;
 }
 @media (max-width: 1400px) {
   .grid-boutons {
