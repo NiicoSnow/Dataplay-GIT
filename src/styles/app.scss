@@ -94,6 +94,9 @@ button {
   z-index: -1;
   display: block; 
 }
+.video-mobile {
+  display:none;
+}
 .cockpitup {
   display:none
 }
@@ -329,5 +332,13 @@ button {
   }
   .btn-catalogue2 {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  .video-mobile {
+    display:block
+  }
+  .video-pc {
+    display:none;
   }
 }
