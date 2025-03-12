@@ -221,6 +221,13 @@ button {
 .btn-accueil:hover {
   background-color: #174d84;
 }
+select{
+  padding: 3px 0;
+  margin: 6px 0;
+}
+label{
+  margin: 6px 0;
+}
 
 @media (max-width: 1400px) {
   .grid-boutons {
