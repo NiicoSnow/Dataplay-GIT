@@ -112,6 +112,8 @@ window.onload = function () {
         .then(data => {
             crashData = data.crash;
             loadFilters(crashData);
+            populateAircraftSelect();
+            populateModelSelect();
         });
 };
 
@@ -125,6 +127,7 @@ function displayData_cat(data) {
     const p_pays = document.getElementById('pays');
     const p_crew_board = document.getElementById('crew_board');
     const p_crew = document.getElementById('crew');
+    const p_type = document.getElementById('flightType');
 
     // Fonction pour calculer la différence d'années
     function calculerNbAnnee(anneeYOM, dateCrash) {
@@ -146,6 +149,7 @@ function displayData_cat(data) {
         p_pax.innerHTML = `${crash["PAX fatalities"]}`;
         p_cause.innerHTML = `${crash["Crash cause"]}`;
         p_pays.innerHTML = `${crash.Country}`;
+        p_type.innerHTML = `${crash["Flight type"]}`;
     } else {
         p_immatriculation.innerHTML = '/';
         p_YOM.innerHTML = '/ ';
@@ -156,6 +160,7 @@ function displayData_cat(data) {
         p_pax.innerHTML = '/';
         p_cause.innerHTML = '/';
         p_pays.innerHTML = '/';
+        p_type.innerHTML = '/';
     }
 }
 
@@ -303,7 +308,108 @@ function updateImage() {
     }
 }
 
-document.querySelector('#choix_aircraft').addEventListener('change', () => updateModels(), updateOperators(), updateDates(), filterData())
-document.querySelector('#choix_modele').addEventListener('change', () => updateOperators(), updateDates(), filterData())
-document.querySelector('#choix_operator').addEventListener('change', () => updateDates(), filterData())
-document.querySelector('#choix_date').addEventListener('change', () => filterData())
+document.querySelector('#choix_aircraft').addEventListener('change', () => {
+    updateModels();
+    updateOperators();
+    updateDates();
+    filterData();
+});
+document.querySelector('#choix_modele').addEventListener('change', () => {
+    updateOperators();
+    updateDates();
+    filterData();
+});
+document.querySelector('#choix_operator').addEventListener('change', () => {
+    updateDates();
+    filterData();
+});
+document.querySelector('#choix_date').addEventListener('change', () => {
+    filterData();
+});
+
+
+/*Page Comparaison*/
+
+let aircraftModels = {};
+
+function populateAircraftSelect() {
+    const aircraftSet = new Set();
+    aircraftModels = {};
+
+    // Récupérer tous les Aircrafts et leurs modèles
+    crashData.forEach(crash => {
+        const aircraft = crash.Aircraft;
+        const model = crash.Model;
+
+        aircraftSet.add(aircraft);
+
+        if (!aircraftModels[aircraft]) {
+            aircraftModels[aircraft] = new Set();
+        }
+        aircraftModels[aircraft].add(model);
+    });
+
+    // Ajouter les options au select Aircraft
+    const aircraftSelect = document.getElementById('aircraftSelect');
+    aircraftSet.forEach(aircraft => {
+        let option = document.createElement('option');
+        option.value = aircraft;
+        option.textContent = aircraft;
+        aircraftSelect.appendChild(option);
+    });
+
+    aircraftSelect.addEventListener('change', populateModelSelect);
+}
+
+function populateModelSelect() {
+    const selectedAircraft = document.getElementById('aircraftSelect').value;
+    const modelSelect = document.getElementById('modelSelect');
+
+    // Réinitialiser le select Model
+    modelSelect.innerHTML = '<option value="">Sélectionner un Modèle</option>';
+
+    if (selectedAircraft && aircraftModels[selectedAircraft]) {
+        aircraftModels[selectedAircraft].forEach(model => {
+            let option = document.createElement('option');
+            option.value = model;
+            option.textContent = model;
+            modelSelect.appendChild(option);
+        });
+    }
+
+    modelSelect.addEventListener('change', filterResults);
+}
+
+function filterResults() {
+    const selectedAircraft = document.getElementById('aircraftSelect').value;
+    const selectedModel = document.getElementById('modelSelect').value;
+    const results = {};
+
+    // Regrouper par Aircraft & Model et additionner les crashs et victimes
+    crashData.forEach(crash => {
+        if (crash.Aircraft === selectedAircraft && crash.Model === selectedModel) {
+            const key = crash.Aircraft + '|' + crash.Model;
+            if (!results[key]) {
+                results[key] = {
+                    Aircraft: crash.Aircraft,
+                    Model: crash.Model,
+                    CrashCount: 0,
+                    TotalFatalities: 0
+                };
+            }
+            results[key].CrashCount++;
+            results[key].TotalFatalities += parseInt(crash["Total fatalities"]);
+        }
+    });
+
+    // Afficher les résultats dans le tableau
+    const tableBody = document.getElementById("results");
+    tableBody.innerHTML = Object.values(results).map(entry => `
+        <tr>
+            <td>${entry.Aircraft}</td>
+            <td>${entry.Model}</td>
+            <td>${entry.CrashCount}</td>
+            <td>${entry.TotalFatalities}</td>
+        </tr>
+    `).join('');
+}

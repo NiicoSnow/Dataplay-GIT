@@ -30,6 +30,7 @@
         <p><strong>Immatriculation&nbsp;:&nbsp;</strong><span id="immatriculation">/</span></p>
         <p><strong>Année&nbsp;de&nbsp;production&nbsp;:&nbsp;</strong><span id="YOM">/ </span></p>
         <p><strong>Nombre&nbsp;d'années&nbsp;en&nbsp;service&nbsp;:&nbsp;</strong><span id="nbAnnee">/</span></p>
+        <p><strong>Type&nbsp;de&nbsp;vol&nbsp;:&nbsp;</strong><span id="flightType">/</span></p>
       </div>
       <div class="info-DA info-2">
         <p><strong>Équipage&nbsp;à&nbsp;bord&nbsp;:&nbsp;</strong><span id="crew_board">/</span></p>
@@ -69,7 +70,35 @@
   </section>
 
   <!-- Section Comparaison (cachée par défaut) -->
+  
+  
+  
   <section class="page comparaison">
+    <h2>Recherche des Crashs d'Avions</h2>
+
+    <label>Type d'avion :</label>
+    <select id="aircraftSelect">
+        <option value="">Sélectionner un Aircraft</option>
+    </select>
+
+    <label>Modèle :</label>
+    <select id="modelSelect">
+        <option value="">Sélectionner un Modèle</option>
+    </select>
+
+    <h3>Résultats :</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Aircraft</th>
+                <th>Model</th>
+                <th>Nombre de Crashs</th>
+                <th>Total Fatalities</th>
+            </tr>
+        </thead>
+        <tbody id="results"></tbody>
+    </table>
+    
     <button class="btn-accueil">▼</button>
     <div class="buttons flex-boutons">
       <button class="btn-catalogue2 btn-deco">Catalogue</button>
