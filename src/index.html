@@ -40,7 +40,7 @@
       </div>
       <div class="info-DA info-3">
         <p><strong>Cause&nbsp;de&nbsp;l'accident&nbsp;:&nbsp;</strong><span id="cause">/</span></p>
-        <p><strong>Pays&nbsp;:&nbsp;</strong><span id="pays">/</span></p>
+        <p><strong>Pays&nbsp;du&nbsp;crash&nbsp;:&nbsp;</strong><span id="pays">/</span></p>
       </div>
       
       <img id="aircraft_image_dessus" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
@@ -74,31 +74,61 @@
   
   
   <section class="page comparaison">
-    <h2>Recherche des Crashs d'Avions</h2>
+    <div class="comparaison">
+      <div class="compImageInfo">
+        <img id="aircraft_image_comp1" class= "imageComp" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
+        <div class="comp1">
+          <label>Type d'avion :</label>
+          <select id="aircraftSelect">
+              <option value="">Sélectionner un Aircraft</option>
+          </select>
 
-    <label>Type d'avion :</label>
-    <select id="aircraftSelect">
-        <option value="">Sélectionner un Aircraft</option>
-    </select>
+          <label>Modèle :</label>
+          <select id="modelSelect">
+              <option value="">Sélectionner un Modèle</option>
+          </select>
 
-    <label>Modèle :</label>
-    <select id="modelSelect">
-        <option value="">Sélectionner un Modèle</option>
-    </select>
+          <h3>Résultats :</h3>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Nombre de Crashs</th>
+                      <th id="nbcrashs">/</th>
+                      <th>Total Fatalities</th>
+                      <th id="totfat">/</th>
+                  </tr>
+              </thead>
+          </table>
+        </div>
+      </div>
+      <div class="compImageInfo">
+        <img id="aircraft_image_comp2" class= "imageComp" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
+        <div class="comp2">
+          <label>Type d'avion :</label>
+          <select id="aircraftSelect2">
+            <option value="">Sélectionner un Aircraft</option>
+          </select>
 
-    <h3>Résultats :</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Aircraft</th>
-                <th>Model</th>
-                <th>Nombre de Crashs</th>
-                <th>Total Fatalities</th>
-            </tr>
-        </thead>
-        <tbody id="results"></tbody>
-    </table>
-    
+          <label>Modèle :</label>
+          <select id="modelSelect2">
+              <option value="">Sélectionner un Modèle</option>
+          </select>
+
+          <h3>Résultats :</h3>
+          <table>
+              <thead>
+                  <tr>
+                    <th>Nombre de Crashs</th>
+                    <th id="nbcrashs2">/</th>
+                    <th>Total Fatalities</th>
+                    <th id="totfat2">/</th>
+                  </tr>
+              </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <button class="btn-accueil">▼</button>
     <div class="buttons flex-boutons">
       <button class="btn-catalogue2 btn-deco">Catalogue</button>

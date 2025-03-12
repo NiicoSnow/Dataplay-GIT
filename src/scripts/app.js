@@ -114,6 +114,8 @@ window.onload = function () {
             loadFilters(crashData);
             populateAircraftSelect();
             populateModelSelect();
+            populateAircraftSelect2();
+            populateModelSelect2();
         });
 };
 
@@ -332,6 +334,22 @@ document.querySelector('#choix_date').addEventListener('change', () => {
 
 let aircraftModels = {};
 
+/*Tableau 1*/
+function updateImageComp1() {
+    console.log('update');
+      const selectedModel = document.getElementById('modelSelect').value;
+      const aircraftImage = document.getElementById('aircraft_image_comp1');
+  
+      if (selectedModel && aircraftImages[selectedModel]) {
+        console.log('updated');
+          aircraftImage.src = aircraftImages[selectedModel];
+          aircraftImage.style.display = 'block';
+      } else {
+        console.log('not');
+          aircraftImage.src = '';
+          aircraftImage.style.display = 'none';
+      }
+}
 function populateAircraftSelect() {
     const aircraftSet = new Set();
     aircraftModels = {};
@@ -345,8 +363,10 @@ function populateAircraftSelect() {
 
         if (!aircraftModels[aircraft]) {
             aircraftModels[aircraft] = new Set();
+            updateImageComp1();
         }
         aircraftModels[aircraft].add(model);
+        
     });
 
     // Ajouter les options au select Aircraft
@@ -383,33 +403,179 @@ function populateModelSelect() {
 function filterResults() {
     const selectedAircraft = document.getElementById('aircraftSelect').value;
     const selectedModel = document.getElementById('modelSelect').value;
-    const results = {};
+    let crashCount = 0;
+    let totalFatalities = 0;
 
-    // Regrouper par Aircraft & Model et additionner les crashs et victimes
     crashData.forEach(crash => {
         if (crash.Aircraft === selectedAircraft && crash.Model === selectedModel) {
-            const key = crash.Aircraft + '|' + crash.Model;
-            if (!results[key]) {
-                results[key] = {
-                    Aircraft: crash.Aircraft,
-                    Model: crash.Model,
-                    CrashCount: 0,
-                    TotalFatalities: 0
-                };
-            }
-            results[key].CrashCount++;
-            results[key].TotalFatalities += parseInt(crash["Total fatalities"]);
+            crashCount++;
+            totalFatalities += parseInt(crash["Total fatalities"]);
         }
     });
 
-    // Afficher les résultats dans le tableau
-    const tableBody = document.getElementById("results");
-    tableBody.innerHTML = Object.values(results).map(entry => `
-        <tr>
-            <td>${entry.Aircraft}</td>
-            <td>${entry.Model}</td>
-            <td>${entry.CrashCount}</td>
-            <td>${entry.TotalFatalities}</td>
-        </tr>
-    `).join('');
+    const crashCountElement = document.getElementById("nbcrashs");
+    const totalFatalitiesElement = document.getElementById("totfat");
+
+    if (crashCountElement && totalFatalitiesElement) {
+        crashCountElement.textContent = crashCount;
+        totalFatalitiesElement.textContent = totalFatalities;
+    } else {
+        console.error("Elements with ID 'nbcrashs' or 'totfat' not found.");
+    }
 }
+
+
+/*Tableau 2*/
+function updateImageComp2() {
+    console.log('update');
+      const selectedModel = document.getElementById('modelSelect2').value;
+      const aircraftImage = document.getElementById('aircraft_image_comp2');
+  
+      if (selectedModel && aircraftImages[selectedModel]) {
+        console.log('updated');
+          aircraftImage.src = aircraftImages[selectedModel];
+          aircraftImage.style.display = 'block';
+      } else {
+        console.log('not');
+          aircraftImage.src = '';
+          aircraftImage.style.display = 'none';
+      }
+}
+
+function populateAircraftSelect2() {
+    const aircraftSet = new Set();
+    aircraftModels = {};
+
+    crashData.forEach(crash => {
+        const aircraft = crash.Aircraft;
+        const model = crash.Model;
+
+        aircraftSet.add(aircraft);
+
+        if (!aircraftModels[aircraft]) {
+            aircraftModels[aircraft] = new Set();
+        }
+        aircraftModels[aircraft].add(model);
+        updateImageComp2();
+    });
+
+    const aircraftSelect = document.getElementById('aircraftSelect2');
+    aircraftSet.forEach(aircraft => {
+        let option = document.createElement('option');
+        option.value = aircraft;
+        option.textContent = aircraft;
+        aircraftSelect.appendChild(option);
+    });
+
+    aircraftSelect.addEventListener('change', populateModelSelect2);
+}
+
+function populateModelSelect2() {
+    const selectedAircraft = document.getElementById('aircraftSelect2').value;
+    const modelSelect = document.getElementById('modelSelect2');
+
+    modelSelect.innerHTML = '<option value="">Sélectionner un Modèle</option>';
+
+    if (selectedAircraft && aircraftModels[selectedAircraft]) {
+        aircraftModels[selectedAircraft].forEach(model => {
+            let option = document.createElement('option');
+            option.value = model;
+            option.textContent = model;
+            modelSelect.appendChild(option);
+        });
+    }
+
+    modelSelect.addEventListener('change', () => {
+        filterResults2();
+        updateImageComp2();
+    });
+}
+
+function filterResults2() {
+    const selectedAircraft = document.getElementById('aircraftSelect2').value;
+    const selectedModel = document.getElementById('modelSelect2').value;
+    let crashCount = 0;
+    let totalFatalities = 0;
+
+    crashData.forEach(crash => {
+        if (crash.Aircraft === selectedAircraft && crash.Model === selectedModel) {
+            crashCount++;
+            totalFatalities += parseInt(crash["Total fatalities"]);
+        }
+    });
+
+    const crashCountElement = document.getElementById("nbcrashs2");
+    const totalFatalitiesElement = document.getElementById("totfat2");
+
+    if (crashCountElement && totalFatalitiesElement) {
+        crashCountElement.textContent = crashCount;
+        totalFatalitiesElement.textContent = totalFatalities;
+    } else {
+        console.error("Elements with ID 'nbcrashs2' or 'totfat2' not found.");
+    }
+}
+
+// Ajout d'événements pour initialiser les sélections
+document.addEventListener("DOMContentLoaded", () => {
+    populateAircraftSelect2();
+    document.querySelector('#aircraftSelect2').addEventListener('change', () => {
+        populateModelSelect2();
+        filterResults2();
+    });
+    document.querySelector('#modelSelect2').addEventListener('change', () => {
+        filterResults2();
+    });
+});
+
+// Ajout d'événements pour initialiser les sélections
+document.addEventListener("DOMContentLoaded", () => {
+    populateAircraftSelect2();
+    document.querySelector('#aircraftSelect2').addEventListener('change', () => {
+        populateModelSelect2();
+        filterResults2();
+    });
+    document.querySelector('#modelSelect2').addEventListener('change', () => {
+        filterResults2();
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    populateAircraftSelect();
+    populateAircraftSelect2();
+    
+    document.querySelector('#aircraftSelect').addEventListener('change', () => {
+        populateModelSelect();
+        filterResults();
+        updateImageComp1();
+    });
+
+    document.querySelector('#modelSelect').addEventListener('change', () => {
+        filterResults();
+        updateImageComp1();
+    });
+
+    document.querySelector('#aircraftSelect2').addEventListener('change', () => {
+        populateModelSelect2();
+        filterResults2();
+    });
+
+    document.querySelector('#modelSelect2').addEventListener('change', () => {
+        filterResults2();
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    populateAircraftSelect2();
+    
+    document.querySelector('#aircraftSelect2').addEventListener('change', () => {
+        populateModelSelect2();
+        filterResults2();
+        updateImageComp2();
+    });
+
+    document.querySelector('#modelSelect2').addEventListener('change', () => {
+        filterResults2();
+        updateImageComp2();
+    });
+});
+

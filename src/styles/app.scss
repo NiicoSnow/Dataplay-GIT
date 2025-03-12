@@ -221,17 +221,7 @@ button {
 .btn-accueil:hover {
   background-color: #174d84;
 }
-#aircraft_image{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-#aircraft_image_dessus{
-  grid-column: 2;
-  grid-row: 1 / -1;
-  justify-self: center;
-  align-self: center;
-}
+
 @media (max-width: 1400px) {
   .grid-boutons {
     grid-template-rows: repeat(2, 1fr);
@@ -275,6 +265,49 @@ button {
     column-gap: 400px;
   }
 }
+#aircraft_image{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#aircraft_image_dessus{
+  grid-column: 2;
+  grid-row: 1 / -1;
+  justify-self: center;
+  align-self: center;
+}
+
+//page comparaison
+.comparaison{
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+}
+.compImageInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.comp1, .comp2{
+  display: flex;
+  flex-direction: column;
+  background-color: $second-color;
+  border-radius: 15px;
+  padding: 24px;
+}
+tr{
+  display: flex;
+  flex-direction: column;
+}
+#nbcrashs, #nbcrashs2, #totfat, #totfat2{
+  font-weight: normal;
+}
+.imageComp{
+  padding: 50px;
+  background-color: $third-color;
+  border-radius: 15px;
+}
+
 @media (max-width: 1025px){
   .cockpit {
     height: 150px;
