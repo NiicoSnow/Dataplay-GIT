@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <title>DWMA project</title>
+    <title>Dataplay-LostFlights</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
@@ -58,8 +58,19 @@
     <div class="buttons flex-boutons">
       <button class="btn-catalogue2 btn-deco">Catalogue</button>
     </div>
+    <div class="buttons mobile">
+      <button class="btn-reset btn-deco">Reset</button>
+    </div>
   </section>
-
-  <img class="cockpit" src="assets/images/cockpit.webp"srcset="assets/images/cockpitx2.webp 2x" alt="image d'un cockpit d'avion en 2D crée en vectoriel pour donner une immersion dans le thème du site">
+  <div class="video-container">
+    <video class="video-pc" autoplay loop playsinline>
+        <source src="assets/images/animationnuage.webm" type="video/webm">
+    </video>
+    <video class="video-mobile" autoplay loop muted playsinline>
+      <source src="assets/images/animationnuageportrait.webm" type="video/webm">
+    </video>
+</div>
+  <img class="cockpitup" src="assets/images/cockpithaut.webp"srcset="assets/images/cockpithautx2.webp 2x" alt="image d'un cockpit supérieur d'avion en 2D crée en vectoriel pour donner une immersion dans le thème du site">
+  <img class="cockpit" src="assets/images/cockpit.webp"srcset="assets/images/cockpitx2.webp 2x" alt="image d'un cockpit inférieur d'avion en 2D crée en vectoriel pour donner une immersion dans le thème du site">
 </body>
 </html>
