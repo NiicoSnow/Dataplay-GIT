@@ -584,4 +584,48 @@ function calculateAverageAges(data) {
     });
   });
 */
-  
+
+document.addEventListener('DOMContentLoaded', function() {
+    const aircraftSelect = document.getElementById('aircraftSelect');
+    const modelSelect = document.getElementById('modelSelect');
+    const selection = document.querySelector('.selection');
+    const resultats = document.querySelector('.resultats');
+    const hiddenClass = 'resultats--hidden';
+
+    function checkCompletion() {
+        if (aircraftSelect.value && modelSelect.value) {
+            selection.classList.add(hiddenClass);
+            resultats.classList.remove(hiddenClass);
+        } else {
+            selection.classList.remove(hiddenClass);
+            resultats.classList.add(hiddenClass);
+        }
+    }
+
+    aircraftSelect.addEventListener('change', checkCompletion);
+    modelSelect.addEventListener('change', checkCompletion);
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const aircraftSelect = document.getElementById('aircraftSelect2');
+    const modelSelect = document.getElementById('modelSelect2');
+    const selection = document.querySelector('.selection2');
+    const resultats = document.querySelector('.resultats2');
+    const hiddenClass = 'resultats2--hidden';
+
+    function checkCompletion() {
+        if (aircraftSelect.value && modelSelect.value) {
+            selection.classList.add(hiddenClass);
+            resultats.classList.remove(hiddenClass);
+        } else {
+            selection.classList.remove(hiddenClass);
+            resultats.classList.add(hiddenClass);
+        }
+    }
+
+    aircraftSelect.addEventListener('change', checkCompletion);
+    modelSelect.addEventListener('change', checkCompletion);
+});
+
+
