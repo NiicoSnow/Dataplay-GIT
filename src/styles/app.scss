@@ -38,31 +38,6 @@ html, body {
   align-items: center;     
 }
 
-.title__container{
-  background-color: white;
-  height: 140px;
-  position: relative;
-  overflow: hidden;
-}
-
-.title__hidden{
-  background-color: white;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 2;
-  overflow: hidden;
-}
-
-/*.bottom__hidden{
-  height: 30%;
-  width: 100%;
-  background-color: white;
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-}*/
-
 .title {
   font-size: 80px;
   margin-bottom: 40px;
