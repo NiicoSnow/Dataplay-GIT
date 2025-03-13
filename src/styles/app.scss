@@ -266,10 +266,10 @@ label{
   object-fit: cover;
 }
 h1{
-  margin-top: 15%;
+  margin-top: 340px;
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 1025px) and (max-width: 1400px) {
   .grid-boutons {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -340,6 +340,7 @@ h1{
   border-radius: 15px;
   padding: 24px;
   width: 324px;
+  color: black;
 }
 tr{
   display: flex;
@@ -356,6 +357,10 @@ tr{
 
 .imageComp2{
   transform: scaleX(-1);
+}
+
+h1{
+  margin-top: 15%;
 }
 
 @media (max-width: 1025px){
