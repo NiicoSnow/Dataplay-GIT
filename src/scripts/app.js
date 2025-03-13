@@ -718,7 +718,23 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+//ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION 
 
+
+let positionX = 0; // Position actuelle de l'avion
+const avion = document.getElementById("aircraft_image");
+const vitesse = 50; // Nombre de pixels par mouvement
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+        positionX -= vitesse;
+    } else if (event.key === "ArrowRight") {
+        positionX += vitesse;
+    }
+
+    // Animation GSAP pour déplacer l'avion
+    gsap.to(avion, { x: positionX, duration: 0.3, ease: "power2.out" });
+});
 
 
 
