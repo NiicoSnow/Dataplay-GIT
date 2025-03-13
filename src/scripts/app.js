@@ -718,10 +718,45 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+//ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const airplane = document.getElementById("airplane"); // L'élément avion
+    const backgroundVideo = document.getElementById("background-video"); // La vidéo de fond
+    const allElements = document.querySelectorAll("body > *:not(#airplane):not(#background-video)");
+    let isFlightMode = false;
+    let airplanePosition = 50; // Position en % pour centrer
 
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "ArrowUp" && !isFlightMode) {
+            // Active le mode vol
+            isFlightMode = true;
+            
+            // Cacher tous les autres éléments sauf l'avion et la vidéo
+            allElements.forEach(el => el.style.display = "none");
+            
+            // Afficher explicitement l'avion et la vidéo
+            backgroundVideo.style.display = "block";
+            airplane.style.display = "block";
+            
+            // Positionner l'avion au centre
+            airplane.style.position = "absolute";
+            airplane.style.top = "50%";
+            airplane.style.left = `${airplanePosition}%`;
+            airplane.style.transform = "translate(-50%, -50%)";
+        }
 
-
+        if (isFlightMode) {
+            if (event.key === "ArrowLeft") {
+                airplanePosition = Math.max(0, airplanePosition - 5); // Aller à gauche
+            }
+            if (event.key === "ArrowRight") {
+                airplanePosition = Math.min(100, airplanePosition + 5); // Aller à droite
+            }
+            airplane.style.left = `${airplanePosition}%`;
+        }
+    });
+});
 
 
 
