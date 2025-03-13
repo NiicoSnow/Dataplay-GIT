@@ -3,8 +3,8 @@
 import { gsap } from "gsap";
 
 /*gsap.to(".title__hidden", {duration: 1.5, y: -150, ease: "power2.out"});*/
-gsap.to(".bottom__hidden", {duration: 1.5, y: 500, ease: "power2.out"});
-gsap.to(".top__hidden", {duration: 1.5, y: -500, ease: "power2.out"});
+gsap.to(".bottom__hidden", {duration: 1.5, y: "100%", ease: "power2.out"});
+gsap.to(".top__hidden", {duration: 1.5, y: "-100%", ease: "power2.out"});
 /*gsap.from("button", {duration: 1.5, y: 150, ease: "power2.out"});*/
 
 
@@ -13,8 +13,8 @@ catalogue.onclick = function (){
     gsap.fromTo(".btn-comparaison2",{duration: 0.5, y: 250, ease: "power2.out"},{y:0, delay: 0.3});
   gsap.fromTo(".catalogue select",{duration: 0.5, y: 250, ease: "power2.out"},{y:0, delay: 0.38});
   gsap.to(".btn__anim__acceuil",{duration: 0.5, y: 250, ease: "power2.out"});
-  gsap.to(".anim__hidden--version1",{duration: 0.7, x: 450, ease: "power2.out",delay: 0.3, stagger: 0.1});
-  gsap.to(".anim__hidden--version2",{duration: 0.9, x: -650, ease: "power2.out",delay: 0.4});
+  gsap.to(".anim__hidden--version1",{duration: 0.5, x: "100%", ease: "power2.out",delay: 0.3, stagger: 0.1});
+  gsap.to(".anim__hidden--version2",{duration: 0.5, x: "100%", ease: "power2.out",delay: 0.4});
  /*gsap.from(".marquelogo",{duration: 0.8, x: -250, ease: "power2.out", delay: 0.3});*/
   /*gsap.to("h1", {duration: 0.5, y: -250, ease: "power2.out"})*/
 }
@@ -24,8 +24,8 @@ catalogue2.onclick = function (){
     gsap.to(".catalogue select",{duration: 0.5, y: 0, ease: "power2.out", delay: 0.58});
     gsap.to(".btn-catalogue2",{duration: 0.5, y: 250, ease: "power2.out"});
     gsap.to(".anim__hidden",{duration: 0.5, y:0, ease: "power2.out", stagger: 0.07});
-    gsap.fromTo(".anim__hidden--version1",{x:0},{duration: 0.7, x: 450, ease: "power2.out",delay: 0.5, stagger: 0.1});
-    gsap.fromTo(".anim__hidden--version2",{x:0},{duration: 0.9, x: -650, ease: "power2.out",delay: 0.4});
+    gsap.fromTo(".anim__hidden--version1",{x:0},{duration: 0.5, x: "100%", ease: "power2.out",delay: 0.5, stagger: 0.1});
+    gsap.fromTo(".anim__hidden--version2",{x:0},{duration: 0.5, x: "-100%", ease: "power2.out",delay: 0.4});
    /*gsap.from(".marquelogo",{duration: 0.8, x: -250, ease: "power2.out", delay: 0.3});*/
     /*gsap.to("h1", {duration: 0.5, y: -250, ease: "power2.out"})*/
 }
@@ -33,7 +33,7 @@ catalogue2.onclick = function (){
 comparaison.onclick = function (){
     gsap.to(".btn__anim__acceuil",{duration: 0.5, y: 250, ease: "power2.out"});
     gsap.fromTo(".btn-catalogue2",{duration: 0.5, y: 250, ease: "power2.out"},{y:0, delay: 0.3});
-    gsap.fromTo(".anim__hidden",{ y: 0},{duration: 1, y:550,ease: "power2.out", delay: 0.4, stagger: 0.1});
+    gsap.fromTo(".anim__hidden",{ y: 0},{duration: 0.5, y:"100%",ease: "power2.out", delay: 0.4, stagger: 0.1});
    /*gsap.from(".marquelogo",{duration: 0.8, x: -250, ease: "power2.out", delay: 0.3});*/
     /*gsap.to("h1", {duration: 0.5, y: -250, ease: "power2.out"})*/
 }
@@ -42,7 +42,7 @@ comparaison2.onclick = function (){
     gsap.fromTo(".btn-catalogue2",{duration: 0.5, y: 250, ease: "power2.out"},{y:0, delay: 0.3});
     gsap.to(".btn-comparaison2",{duration: 0.5, y: 250, ease: "power2.out", delay:0.1});
     gsap.to(".catalogue select",{duration: 0.5, y: 250, ease: "power2.out"});
-    gsap.fromTo(".anim__hidden",{ y: 0},{duration: 1, y:550, ease: "power2.out", delay: 0.6, stagger: 0.07});
+    gsap.fromTo(".anim__hidden",{ y: 0},{duration: 0.5, y:"100%", ease: "power2.out", delay: 0.6, stagger: 0.07});
     gsap.to(".anim__hidden--version1",{duration: 0.5, x: 0, ease: "power2.out", stagger: 0.1});
     gsap.to(".anim__hidden--version2",{duration: 0.5, x: 0, ease: "power2.out"});
 }
