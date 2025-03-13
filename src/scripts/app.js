@@ -709,4 +709,15 @@ document.addEventListener('DOMContentLoaded', function() {
     resetButton.addEventListener('click', resetSelections);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    var button = document.querySelector(".btn-choisir");
+    var gridBoutons = document.querySelector(".grid-boutons");
+
+    button.addEventListener("click", function() {
+        gridBoutons.classList.toggle("grid-boutons__hidden");
+    });
+});
+
+
+
 
