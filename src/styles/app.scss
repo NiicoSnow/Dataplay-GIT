@@ -325,6 +325,17 @@ h1{
 .compImageInfo img, .compImageInfo2 img{
   width: 324px;
 }
+.info-DA {
+  height: fit-content;
+  width: auto;
+  padding: 12px;
+  border: 10px solid $main-color;
+  background-color: $second-color;
+
+  p {
+    color: black;
+  }
+}
 
 @media (min-width: 1025px) and (max-width: 1400px) {
   html, body {
