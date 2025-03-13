@@ -721,23 +721,24 @@ document.addEventListener("DOMContentLoaded", function() {
 //ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION 
 
 document.addEventListener('keydown', function(event) {
-    const avion = document.getElementById('aircraft_image_dessus');
+    const avionProfil = document.getElementById('aircraft_image'); // Image de l'avion vue de profil
+    const avionDessus = document.getElementById('aircraft_image_dessus'); // Image de l'avion vue de dessus
     const elementsAutour = document.querySelector('.grid-info');
-    const style = window.getComputedStyle(avion);
+    const style = window.getComputedStyle(avionDessus);
     let left = parseInt(style.left) || 0; // Assure-toi que left est un nombre
     let top = parseInt(style.top) || 0; // Assure-toi que top est un nombre
 
     switch (event.key) {
         case 'ArrowUp':
             elementsAutour.style.opacity = '0';
+            avionProfil.style.display = 'none'; // Masque l'image de l'avion vue de profil
             break;
         case 'ArrowLeft':
-            avion.style.left = (left - 10) + 'px';
+            avionDessus.style.left = (left - 10) + 'px'; // Déplace l'image de l'avion vue de dessus vers la gauche
             break;
         case 'ArrowRight':
-            avion.style.left = (left + 10) + 'px';
+            avionDessus.style.left = (left + 10) + 'px'; // Déplace l'image de l'avion vue de dessus vers la droite
             break;
-    }
+}
 });
-
 
