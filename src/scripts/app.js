@@ -1,3 +1,70 @@
+"use strict"
+
+import { gsap } from "gsap";
+
+/*gsap.to(".title__hidden", {duration: 1.5, y: -150, ease: "power2.out"});*/
+gsap.to(".bottom__hidden", {duration: 1.5, y: 500, ease: "power2.out"});
+gsap.to(".top__hidden", {duration: 1.5, y: -500, ease: "power2.out"});
+/*gsap.from("button", {duration: 1.5, y: 150, ease: "power2.out"});*/
+
+
+
+catalogue.onclick = function (){
+    gsap.fromTo(".btn-comparaison2",{duration: 0.5, y: 250, ease: "power2.out"},{y:0, delay: 0.3});
+  gsap.fromTo(".catalogue select",{duration: 0.5, y: 250, ease: "power2.out"},{y:0, delay: 0.38});
+  gsap.to(".btn__anim__acceuil",{duration: 0.5, y: 250, ease: "power2.out"});
+  gsap.to(".anim__hidden--version1",{duration: 0.7, x: 450, ease: "power2.out",delay: 0.3, stagger: 0.1});
+  gsap.to(".anim__hidden--version2",{duration: 0.9, x: -650, ease: "power2.out",delay: 0.4});
+ /*gsap.from(".marquelogo",{duration: 0.8, x: -250, ease: "power2.out", delay: 0.3});*/
+  /*gsap.to("h1", {duration: 0.5, y: -250, ease: "power2.out"})*/
+}
+
+catalogue2.onclick = function (){
+    gsap.to(".btn-comparaison2",{duration: 0.5, y: 0, ease: "power2.out", delay: 0.5});
+    gsap.to(".catalogue select",{duration: 0.5, y: 0, ease: "power2.out", delay: 0.58});
+    gsap.to(".btn-catalogue2",{duration: 0.5, y: 250, ease: "power2.out"});
+    gsap.to(".anim__hidden",{duration: 0.5, y:0, ease: "power2.out", stagger: 0.07});
+    gsap.fromTo(".anim__hidden--version1",{x:0},{duration: 0.7, x: 450, ease: "power2.out",delay: 0.5, stagger: 0.1});
+    gsap.fromTo(".anim__hidden--version2",{x:0},{duration: 0.9, x: -650, ease: "power2.out",delay: 0.4});
+   /*gsap.from(".marquelogo",{duration: 0.8, x: -250, ease: "power2.out", delay: 0.3});*/
+    /*gsap.to("h1", {duration: 0.5, y: -250, ease: "power2.out"})*/
+}
+
+comparaison.onclick = function (){
+    gsap.to(".btn__anim__acceuil",{duration: 0.5, y: 250, ease: "power2.out"});
+    gsap.fromTo(".btn-catalogue2",{duration: 0.5, y: 250, ease: "power2.out"},{y:0, delay: 0.3});
+    gsap.fromTo(".anim__hidden",{ y: 0},{duration: 1, y:550,ease: "power2.out", delay: 0.4, stagger: 0.1});
+   /*gsap.from(".marquelogo",{duration: 0.8, x: -250, ease: "power2.out", delay: 0.3});*/
+    /*gsap.to("h1", {duration: 0.5, y: -250, ease: "power2.out"})*/
+}
+
+comparaison2.onclick = function (){
+    gsap.fromTo(".btn-catalogue2",{duration: 0.5, y: 250, ease: "power2.out"},{y:0, delay: 0.3});
+    gsap.to(".btn-comparaison2",{duration: 0.5, y: 250, ease: "power2.out", delay:0.1});
+    gsap.to(".catalogue select",{duration: 0.5, y: 250, ease: "power2.out"});
+    gsap.fromTo(".anim__hidden",{ y: 0},{duration: 1, y:550, ease: "power2.out", delay: 0.6, stagger: 0.07});
+    gsap.to(".anim__hidden--version1",{duration: 0.5, x: 0, ease: "power2.out", stagger: 0.1});
+    gsap.to(".anim__hidden--version2",{duration: 0.5, x: 0, ease: "power2.out"});
+}
+
+
+accueil.onclick = function (){
+  /*gsap.to("h1", {duration: 0.5, y: 0, ease: "power2.out"})*/
+  gsap.to(".btn-comparaison2",{duration: 0.5, y: 250, ease: "power2.out", delay:0.1});
+  gsap.to(".catalogue select",{duration: 0.5, y: 250, ease: "power2.out"});
+  gsap.to(".btn__anim__acceuil",{duration: 0.5, y: 0, ease: "power2.out", delay:0.5});
+  gsap.to(".anim__hidden--version1",{duration: 0.5, x: 0, ease: "power2.out", stagger: 0.1});
+  gsap.to(".anim__hidden--version2",{duration: 0.5, x: 0, ease: "power2.out"});
+}
+
+accueil2.onclick = function (){
+    gsap.to(".btn__anim__acceuil",{duration: 0.5, y: 0, ease: "power2.out", delay:0.5});
+    gsap.to(".btn-catalogue2",{duration: 0.5, y: 250, ease: "power2.out"});
+    gsap.to(".anim__hidden", {duration: 0.5, y:0, ease: "power2.out", stagger: 0.07});
+}
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   // Récupération des sections
   const accueilSection     = document.querySelector(".accueil");
@@ -26,36 +93,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (btnComparaison) {
     btnComparaison.addEventListener("click", () => {
-      accueilSection.classList.remove("active");
-      catalogueSection.classList.remove("active");
-      comparaisonSection.classList.add("active");
+      setTimeout(() => {
+        accueilSection.classList.remove("active");
+        catalogueSection.classList.remove("active");
+        comparaisonSection.classList.add("active");
+      }, 300); // Délai de 2 secondes (2000 ms)
     });
   }
 
   btnAccueilListe.forEach((btn) => {
     btn.addEventListener("click", () => {
-      catalogueSection.classList.remove("active");
-      comparaisonSection.classList.remove("active");
-      accueilSection.classList.add("active");
+      setTimeout(() => {
+        catalogueSection.classList.remove("active");
+        comparaisonSection.classList.remove("active");
+        accueilSection.classList.add("active");
+      }, 500); // Délai de 2 secondes (2000 ms)
     });
   });
 
   // --- Écouteurs pour naviguer directement de Catalogue à Comparaison, et inversement ---
   if (btnComparaison2) {
     btnComparaison2.addEventListener("click", () => {
-      // On enlève .active à la section Catalogue
-      catalogueSection.classList.remove("active");
-      // On l'ajoute à la section Comparaison
-      comparaisonSection.classList.add("active");
+
+      setTimeout(() => {
+        catalogueSection.classList.remove("active");
+        comparaisonSection.classList.add("active");
+      }, 500); // Délai de 2 secondes (2000 ms)
     });
   }
 
   if (btnCatalogue2) {
     btnCatalogue2.addEventListener("click", () => {
-      // On enlève .active à la section Comparaison
-      comparaisonSection.classList.remove("active");
-      // On l'ajoute à la section Catalogue
-      catalogueSection.classList.add("active");
+      setTimeout(() => {
+        comparaisonSection.classList.remove("active");
+        catalogueSection.classList.add("active");
+      }, 500); // Délai de 2 secondes (2000 ms)
     });
   }
 });
@@ -326,6 +398,8 @@ document.querySelector('#choix_modele').addEventListener('change', () => {
 document.querySelector('#choix_operator').addEventListener('change', () => {
     updateDates();
     filterData();
+
+    /*gsap.from("#aircraft_image", {x:-1000, duration: 10})*/
 });
 document.querySelector('#choix_date').addEventListener('change', () => {
     filterData();

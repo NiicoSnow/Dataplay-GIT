@@ -15,11 +15,19 @@
 <body>
      <!-- Section Accueil (visible par défaut) -->
   <section class="page accueil active">
+
+    <div class="top__hidden"></div>
+
     <h1 class="title">LOSTFLIGHTS</h1>
+
+
     <div class="buttons flex-boutons">
-      <button class="btn-catalogue btn-deco">Catalogue</button>
-      <button class="btn-comparaison btn-deco">Comparaison</button>
+      <button id="catalogue" class="btn-catalogue btn-deco btn__anim__acceuil">Catalogue</button>
+      <button id="comparaison" class="btn-comparaison btn-deco btn__anim__acceuil">Comparaison</button>
     </div> 
+
+    <div class="bottom__hidden"></div>
+
   </section>
 
   <!-- Section Catalogue (cachée par défaut) -->
@@ -27,18 +35,21 @@
     <img id="aircraft_image" src="" alt="Image du modèle d'avion" style="display:none; width:300px;">
     <div class="grid-info">
       <div class="info-DA info-1">
+        <div class="anim__hidden2 anim__hidden--version1"></div>
         <p><strong>Immatriculation&nbsp;:&nbsp;</strong><span id="immatriculation">/</span></p>
         <p><strong>Année&nbsp;de&nbsp;production&nbsp;:&nbsp;</strong><span id="YOM">/ </span></p>
         <p><strong>Nombre&nbsp;d'années&nbsp;en&nbsp;service&nbsp;:&nbsp;</strong><span id="nbAnnee">/</span></p>
         <p><strong>Type&nbsp;de&nbsp;vol&nbsp;:&nbsp;</strong><span id="flightType">/</span></p>
       </div>
       <div class="info-DA info-2">
+        <div class="anim__hidden2 anim__hidden--version1"></div>
         <p><strong>Équipage&nbsp;à&nbsp;bord&nbsp;:&nbsp;</strong><span id="crew_board">/</span></p>
         <p><strong>Membres&nbsp;de&nbsp;l'équipage&nbsp;décédés&nbsp;:&nbsp;</strong><span id="crew">/</span></p>
         <p><strong>Passagers&nbsp;à&nbsp;bord&nbsp;:&nbsp;</strong><span id="pax_board">/</span></p>
         <p><strong>Passagers&nbsp;décédés&nbsp;:&nbsp;</strong><span id="pax">/</span></p>
       </div>
       <div class="info-DA info-3">
+        <div class="anim__hidden2 anim__hidden--version2" ></div>
         <p><strong>Cause&nbsp;de&nbsp;l'accident&nbsp;:&nbsp;</strong><span id="cause">/</span></p>
         <p><strong>Pays&nbsp;du&nbsp;crash&nbsp;:&nbsp;</strong><span id="pays">/</span></p>
       </div>
@@ -48,7 +59,7 @@
 
     
 
-    <button class="btn-accueil">▼</button>
+    <button id="accueil"  class="btn-accueil">▼</button>
     <div class="buttons grid-boutons">
       <select id="choix_aircraft" class="btn-constructeur btn-deco2">
         <option value="">Tous les constructeurs</option>
@@ -56,7 +67,7 @@
       <select id="choix_modele" class="btn-modele btn-deco2">
           <option value="">Tous les modèles</option>
       </select>
-      <button class="btn-comparaison2 btn-deco">Comparaison</button>
+      <button id="comparaison2" class="btn-comparaison2 btn-deco">Comparaison</button>
       <select id="choix_operator" class="btn-compagnie btn-deco2">
           <option value="">Toutes les compagnies</option>
       </select>
@@ -76,6 +87,9 @@
   <section class="page comparaison">
     <div class="comparaisonCarre">
       <div class="compImageInfo">
+
+        <div class="anim__hidden"></div>
+
         <img id="aircraft_image_comp1" class= "imageComp" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
         <div class="comp1">
           <label>Constructeur :</label>
@@ -107,6 +121,9 @@
         </div>
       </div>
       <div class="compImageInfo">
+
+        <div class="anim__hidden"></div>
+        
         <img id="aircraft_image_comp2" class= "imageComp2" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
         <div class="comp2">
           <label>Constructeur :</label>
@@ -136,9 +153,9 @@
       </div>
     </div>
 
-    <button class="btn-accueil">▼</button>
+    <button id="accueil2" class="btn-accueil">▼</button>
     <div class="buttons flex-boutons">
-      <button class="btn-catalogue2 btn-deco">Catalogue</button>
+      <button id="catalogue2" class="btn-catalogue2 btn-deco">Catalogue</button>
     </div>
     <div class="buttons mobile">
       <button class="btn-reset btn-deco">Reset</button>
