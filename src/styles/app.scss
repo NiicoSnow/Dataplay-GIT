@@ -268,9 +268,6 @@ label{
     margin:0;
     align-self: baseline;
   }
-  .grid-info {
-    column-gap: 400px;
-  }
 }
 #aircraft_image{
   position: absolute;
@@ -306,7 +303,7 @@ tr{
   display: flex;
   flex-direction: column;
 }
-#nbcrashs, #nbcrashs2, #totfat, #totfat2{
+#nbcrashs, #nbcrashs2, #totfat, #totfat2, #typeVol, #typeVol2{
   font-weight: normal;
 }
 .imageComp{

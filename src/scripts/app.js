@@ -116,6 +116,7 @@ window.onload = function () {
             populateModelSelect();
             populateAircraftSelect2();
             populateModelSelect2();
+            /*calculateAverageAges();*/
         });
 };
 
@@ -386,7 +387,7 @@ function populateModelSelect() {
     const modelSelect = document.getElementById('modelSelect');
 
     // Réinitialiser le select Model
-    modelSelect.innerHTML = '<option value="">Sélectionner un Modèle</option>';
+    modelSelect.innerHTML = '<option value="">Sélectionner un modèle</option>';
 
     if (selectedAircraft && aircraftModels[selectedAircraft]) {
         aircraftModels[selectedAircraft].forEach(model => {
@@ -405,24 +406,29 @@ function filterResults() {
     const selectedModel = document.getElementById('modelSelect').value;
     let crashCount = 0;
     let totalFatalities = 0;
-
+    let typeVol = '';
+  
     crashData.forEach(crash => {
-        if (crash.Aircraft === selectedAircraft && crash.Model === selectedModel) {
-            crashCount++;
-            totalFatalities += parseInt(crash["Total fatalities"]);
-        }
+      if (crash.Aircraft === selectedAircraft && crash.Model === selectedModel) {
+        crashCount++;
+        totalFatalities += parseInt(crash["Total fatalities"]);
+        typeVol = crash["Flight type"];
+      }
     });
-
+  
     const crashCountElement = document.getElementById("nbcrashs");
     const totalFatalitiesElement = document.getElementById("totfat");
-
-    if (crashCountElement && totalFatalitiesElement) {
-        crashCountElement.textContent = crashCount;
-        totalFatalitiesElement.textContent = totalFatalities;
+    const typeVolElement = document.getElementById("typeVol");
+  
+    if (crashCountElement && totalFatalitiesElement && typeVolElement) {
+      crashCountElement.textContent = crashCount;
+      totalFatalitiesElement.textContent = totalFatalities;
+      typeVolElement.textContent = typeVol;
     } else {
-        console.error("Elements with ID 'nbcrashs' or 'totfat' not found.");
+      console.error("Elements with ID 'nbcrashs', 'totfat', or 'typeVol' not found.");
     }
-}
+  }
+  
 
 
 /*Tableau 2*/
@@ -474,7 +480,7 @@ function populateModelSelect2() {
     const selectedAircraft = document.getElementById('aircraftSelect2').value;
     const modelSelect = document.getElementById('modelSelect2');
 
-    modelSelect.innerHTML = '<option value="">Sélectionner un Modèle</option>';
+    modelSelect.innerHTML = '<option value="">Sélectionner un modèle</option>';
 
     if (selectedAircraft && aircraftModels[selectedAircraft]) {
         aircraftModels[selectedAircraft].forEach(model => {
@@ -496,36 +502,29 @@ function filterResults2() {
     const selectedModel = document.getElementById('modelSelect2').value;
     let crashCount = 0;
     let totalFatalities = 0;
-
+    let typeVol2 = '';
+  
     crashData.forEach(crash => {
-        if (crash.Aircraft === selectedAircraft && crash.Model === selectedModel) {
-            crashCount++;
-            totalFatalities += parseInt(crash["Total fatalities"]);
-        }
+      if (crash.Aircraft === selectedAircraft && crash.Model === selectedModel) {
+        crashCount++;
+        totalFatalities += parseInt(crash["Total fatalities"]);
+        typeVol2 = crash["Flight type"];
+      }
     });
-
+  
     const crashCountElement = document.getElementById("nbcrashs2");
     const totalFatalitiesElement = document.getElementById("totfat2");
+    const typeVolElement2 = document.getElementById("typeVol2");
 
-    if (crashCountElement && totalFatalitiesElement) {
-        crashCountElement.textContent = crashCount;
-        totalFatalitiesElement.textContent = totalFatalities;
+    if (crashCountElement && totalFatalitiesElement && typeVolElement2) {
+      crashCountElement.textContent = crashCount;
+      totalFatalitiesElement.textContent = totalFatalities;
+      typeVolElement2.textContent = typeVol2;
     } else {
-        console.error("Elements with ID 'nbcrashs2' or 'totfat2' not found.");
+      console.error("Elements with ID 'nbcrashs2', 'totfat2', or 'typeVol2' not found.");
     }
-}
-
-// Ajout d'événements pour initialiser les sélections
-document.addEventListener("DOMContentLoaded", () => {
-    populateAircraftSelect2();
-    document.querySelector('#aircraftSelect2').addEventListener('change', () => {
-        populateModelSelect2();
-        filterResults2();
-    });
-    document.querySelector('#modelSelect2').addEventListener('change', () => {
-        filterResults2();
-    });
-});
+  }
+  
 
 // Ajout d'événements pour initialiser les sélections
 document.addEventListener("DOMContentLoaded", () => {
@@ -579,3 +578,85 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  populateAircraftSelect();
+  populateAircraftSelect2();
+  
+  document.querySelector('#aircraftSelect').addEventListener('change', () => {
+    populateModelSelect();
+    filterResults();
+    updateImageComp1();
+  });
+
+  document.querySelector('#modelSelect').addEventListener('change', () => {
+    filterResults();
+    updateImageComp1();
+  });
+
+  document.querySelector('#aircraftSelect2').addEventListener('change', () => {
+    populateModelSelect2();
+    filterResults2();
+    updateImageComp2();
+  });
+
+  document.querySelector('#modelSelect2').addEventListener('change', () => {
+    filterResults2();
+    updateImageComp2();
+  });
+});
+
+
+/*
+// Calcul de l'âge moyen par modèle d'avion
+function calculateAverageAges(data) {
+    console.log("age");
+    const ageSums = {};
+    const ageCounts = {};
+  
+    function calculerNbAnnee(anneeYOM, dateCrash) {
+      const anneeConstruction = anneeYOM;
+      const anneeCrash = new Date(dateCrash).getFullYear(); // Assurez-vous que dateCrash est bien un format date
+      const ageAvion = anneeCrash - anneeConstruction;
+      return ageAvion;
+    }
+  
+    crashData.forEach(crash => {
+      const model = crash.Model;
+      const yom = crash.YOM;
+      const dateCrash = crash.Date; // Assurez-vous que les données du crash incluent la date
+      if (yom && dateCrash) {
+        const age = calculerNbAnnee(yom, dateCrash);
+        if (!ageSums[model]) {
+          ageSums[model] = 0;
+          ageCounts[model] = 0;
+        }
+        ageSums[model] += age;
+        ageCounts[model] += 1;
+        document.getElementById('p_nbAnnee').innerHTML = `${age}`;
+      }
+    });
+  
+    const averageAges = {};
+    for (const model in ageSums) {
+      averageAges[model] = (ageSums[model] / ageCounts[model]).toFixed(2);
+    }
+  
+    return averageAges;
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM chargé");
+    const data = crashData; // Assurez-vous que crashData est correctement défini
+    console.log("crashData :", data);
+    if (!data) {
+      console.error("crashData n'est pas défini.");
+      return;
+    }
+    populateAircraftSelect2(); // Assurez-vous que cette fonction est définie
+    document.querySelector('#moyAge').addEventListener('change', () => {
+      const averageAges = calculateAverageAges(data);
+      console.log(averageAges);
+    });
+  });
+*/
+  
