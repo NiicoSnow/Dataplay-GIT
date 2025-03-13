@@ -210,17 +210,6 @@ button {
     color: black;
   }
 }
-.info-DA {
-  height: fit-content;
-  width: auto;
-  padding: 12px;
-  border: 10px solid $main-color;
-  background-color: $second-color;
-
-  p {
-    color: black;
-  }
-}
 .grid-info {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -278,6 +267,65 @@ label{
   object-fit: cover;
 }
 
+#aircraft_image{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+}
+#aircraft_image_dessus{
+  grid-column: 2;
+  grid-row: 1 / -1;
+  justify-self: center;
+  align-self: center;
+  width: 300px;
+}
+
+//page comparaison
+.comparaisonCarre{
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  margin-top: 2%;
+}
+.compImageInfo, .compImageInfo2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.comp1, .comp2{
+  display: flex;
+  flex-direction: column;
+  background-color: $second-color;
+  border-radius: 15px;
+  padding: 24px;
+  width: 324px;
+  color: black;
+}
+tr{
+  display: flex;
+  flex-direction: column;
+}
+#nbcrashs, #nbcrashs2, #totfat, #totfat2, #typeVol, #typeVol2{
+  font-weight: normal;
+}
+.imageComp, .imageComp2{
+  padding: 50px;
+  background-color: $third-color;
+  border-radius: 15px;
+}
+
+.imageComp2{
+  transform: scaleX(-1);
+}
+
+h1{
+  margin-top: 15%;
+}
+.compImageInfo img, .compImageInfo2 img{
+  width: 324px;
+}
+
 @media (min-width: 1025px) and (max-width: 1400px) {
   html, body {
     width: 100%;
@@ -326,62 +374,26 @@ label{
     margin:0;
     align-self: baseline;
   }
-}
-#aircraft_image{
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-#aircraft_image_dessus{
-  grid-column: 2;
-  grid-row: 1 / -1;
-  justify-self: center;
-  align-self: center;
-}
-
-//page comparaison
-.comparaisonCarre{
-  display: flex;
-  flex-direction: row;
-  gap: 90px;
-  margin-top: 2%;
-}
-.compImageInfo, .compImageInfo2{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.comp1, .comp2{
-  display: flex;
-  flex-direction: column;
-  background-color: $second-color;
-  border-radius: 15px;
-  padding: 24px;
-  width: 324px;
-  color: black;
-}
-tr{
-  display: flex;
-  flex-direction: column;
-}
-#nbcrashs, #nbcrashs2, #totfat, #totfat2, #typeVol, #typeVol2{
-  font-weight: normal;
-}
-.imageComp, .imageComp2{
-  padding: 50px;
-  background-color: $third-color;
-  border-radius: 15px;
-}
-
-.imageComp2{
-  transform: scaleX(-1);
-}
-
-h1{
-  margin-top: 15%;
-}
-.compImageInfo img, .compImageInfo2 img{
-  width: 324px;
+  #aircraft_image, #aircraft_image_dessus{
+    width: 300px;
+  }
+  .info-DA {
+    height: fit-content;
+    width: auto;
+    padding: 12px;
+    border: 10px solid $main-color;
+    background-color: $second-color;
+  
+    p {
+      color: black;
+    }
+  }
+  #aircraft_image{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+  }
 }
 
 @media (max-width: 1025px){
@@ -410,7 +422,10 @@ h1{
     border: 5px solid $main-color;
   }
   .grid-info {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 115px;
+    gap: 4px;
   }
   .marquelogo{
     display:none;
@@ -487,6 +502,29 @@ h1{
   select {
     pointer-events: auto; /* S'assurer que les éléments sont cliquables */
     z-index: 2; /* Priorité des éléments sur le conteneur */
+  }
+  #aircraft_image, #aircraft_image_dessus{
+    width: 40%;
+  }
+  .info-DA {
+    height: fit-content;
+    width: auto;
+    padding: 12px;
+    border: 4px solid $main-color;
+    background-color: $second-color;
+  
+    p {
+      color: black;
+    }
+  }
+  #aircraft_image{
+    position: absolute;
+    top: auto;
+    bottom: 80px;
+    right: 20px;
+  }
+  #aircraft_image_dessus{
+    align-self: start;
   }
 }
 @media (max-width: 500px) {
