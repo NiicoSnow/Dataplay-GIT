@@ -1,4 +1,3 @@
-"use strict"
 document.addEventListener("DOMContentLoaded", () => {
   // Récupération des sections
   const accueilSection     = document.querySelector(".accueil");
@@ -17,9 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- Écouteurs existants (à adapter selon votre projet) ---
   if (btnCatalogue) {
     btnCatalogue.addEventListener("click", () => {
-      accueilSection.classList.remove("active");
-      comparaisonSection.classList.remove("active");
-      catalogueSection.classList.add("active");
+      setTimeout(() => {
+        accueilSection.classList.remove("active");
+        comparaisonSection.classList.remove("active");
+        catalogueSection.classList.add("active");
+      }, 300); // Délai de 2 secondes (2000 ms)
     });
   }
 
