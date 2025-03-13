@@ -721,7 +721,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION ANIM AVION 
 
 document.addEventListener('keydown', function(event) {
-    const avion = document.getElementById('aircraft_image');
+    const avion = document.getElementById('aircraft_image_dessus');
     const elementsAutour = document.getElementById('.grid-info');
     const style = window.getComputedStyle(avion);
     let left = parseInt(style.left);
@@ -732,10 +732,10 @@ document.addEventListener('keydown', function(event) {
             ".grid-info".style.opacity = '0';
             break;
         case 'ArrowLeft':
-            aircraft_image.style.left = (left - 10) + 'px';
+            aircraft_image_dessus.style.left = (left - 10) + 'px';
             break;
         case 'ArrowRight':
-            aircraft_image.style.left = (left + 10) + 'px';
+            aircraft_image_dessus.style.left = (left + 10) + 'px';
             break;
     }
 });
