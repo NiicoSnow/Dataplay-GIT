@@ -51,14 +51,41 @@ html, body {
   overflow: hidden;
 }
 
-/*.bottom__hidden{
-  height: 30%;
+.top__hidden{
+  height: 50%;
   width: 100%;
-  background-color: white;
+  background-color: #C5E6F7;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.anim__hidden{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #C5E6F7;
+  z-index: 2;
+}
+
+.anim__hidden2{
+  width: 100%;
+  height: 100%;
+  background-color: #67A1CD;
+  position: absolute;
+  z-index: 2;
+}
+
+
+
+.bottom__hidden{
+  height: 50%;
+  width: 100%;
+  background-color: #C5E6F7;
   position: absolute;
   bottom: 0;
-  z-index: 2;
-}*/
+  z-index: 5;
+}
 
 .title {
   font-size: 80px;
@@ -210,6 +237,19 @@ button {
     color: black;
   }
 }
+.info-DA {
+  height: fit-content;
+  width: auto;
+  padding: 12px;
+  border: 10px solid $main-color;
+  background-color: $second-color;
+  position: relative;
+  overflow: hidden;
+
+  p {
+    color: black;
+  }
+}
 .grid-info {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -219,6 +259,7 @@ button {
 .info-1 {
   grid-column: 1;
   grid-row: 1;
+  overflow: hidden;
 }
 .info-2 {
   grid-column: 1;
@@ -406,6 +447,67 @@ h1{
     width: 300px;
   }
 }
+#aircraft_image{
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  animation: defilement-rtl 9s infinite linear;
+}
+
+@keyframes defilement-rtl {
+  0% {
+    transform: translateX(-100%);      /* position initiale à droite */
+  }
+  100%{
+    transform: translateX(800%)
+  }
+}
+
+#aircraft_image_dessus{
+  grid-column: 2;
+  grid-row: 1 / -1;
+  justify-self: center;
+  align-self: center;
+}
+
+//page comparaison
+.comparaisonCarre{
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  margin-top: 150px;
+}
+.compImageInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.comp1, .comp2{
+  display: flex;
+  flex-direction: column;
+  background-color: $second-color;
+  border-radius: 15px;
+  padding: 24px;
+}
+tr{
+  display: flex;
+  flex-direction: column;
+}
+#nbcrashs, #nbcrashs2, #totfat, #totfat2, #typeVol, #typeVol2{
+  font-weight: normal;
+}
+.imageComp, .imageComp2{
+  padding: 50px;
+  background-color: $third-color;
+  border-radius: 15px;
+}
+
+.imageComp2{
+  transform: scaleX(-1);
+}
+
 
 @media (max-width: 1025px){
   .cockpit {
