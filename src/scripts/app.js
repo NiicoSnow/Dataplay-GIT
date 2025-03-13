@@ -732,10 +732,10 @@ document.addEventListener('keydown', function(event) {
             ".grid-info".style.opacity = '0';
             break;
         case 'ArrowLeft':
-            aircraft_image_dessus.style.left = (left - 10) + 'px';
+            avion.style.left = (left - 10) + 'px';
             break;
         case 'ArrowRight':
-            aircraft_image_dessus.style.left = (left + 10) + 'px';
+            avion.style.left = (left + 10) + 'px';
             break;
     }
 });
