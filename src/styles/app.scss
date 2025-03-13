@@ -25,17 +25,14 @@ html, body {
   display: none;        
   width: 100%;
   height: 100%;
-  position: relative;   
-  text-align: center;   
+  position: relative;      
   padding: 20px;
 }
-
 
 .page.active {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center;     
+  align-items: center;
 }
 
 .title__container{
@@ -79,6 +76,7 @@ html, body {
   gap: 20px; 
 }
 .btn-deco{
+  font-family: "Outfit", sans-serif;
   border: 10px solid $main-color;
   border-radius: 15px;
   height: 55px;
@@ -89,6 +87,8 @@ html, body {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 .btn-deco2{
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
   border: 5px solid $main-color;
   border-radius: 15px;
   height: 55px;
@@ -98,13 +98,19 @@ html, body {
   color: $main-color;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
+.btn-choisir {
+  display: none;
+}
+.btn-reset {
+  display: none;
+}
 button {
   cursor: pointer;
   font-size: 1em;
 }
 .cockpit {
   position: fixed;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   width: 100vw; 
   height: 210px; 
@@ -112,6 +118,9 @@ button {
   object-position: center;
   z-index: -1;
   display: block; 
+}
+.video-mobile {
+  display:none;
 }
 .cockpitup {
   display:none
@@ -191,13 +200,11 @@ button {
   }
 }
 .info-DA {
-  display: flex;
-  height: 125px;
-  width: 300px;
+  height: fit-content;
+  width: auto;
+  padding: 12px;
   border: 10px solid $main-color;
   background-color: $second-color;
-  justify-content: center;
-  align-items: center;
 
   p {
     color: black;
@@ -205,12 +212,9 @@ button {
 }
 .grid-info {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(4,1fr);
-  margin-right: 160px;
-  margin-left:160px;
-  margin-bottom: 100px;
-  column-gap: 500px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,auto);
+  margin: 150px 160px 100px;
 }
 .info-1 {
   grid-column: 1;
@@ -221,7 +225,7 @@ button {
   grid-row: 3;
 }
 .info-3 {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 2;
 }
 .info-4 {
@@ -232,6 +236,39 @@ button {
   position: relative;
   bottom:72px
 }
+.btn-deco:hover {
+  background-color: #bbddff;
+}
+.btn-deco2:hover {
+  background-color: #bbddff;
+}
+.btn-accueil:hover {
+  background-color: #174d84;
+}
+select{
+  padding: 3px 0;
+  margin: 6px 0;
+}
+label{
+  margin: 6px 0;
+}
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+h1{
+  margin-top: 320px;
+}
+
 @media (max-width: 1400px) {
   .grid-boutons {
     grid-template-rows: repeat(2, 1fr);
@@ -271,11 +308,56 @@ button {
     margin:0;
     align-self: baseline;
   }
-  .grid-info {
-    column-gap: 400px;
-  }
 }
-@media (max-width: 500px){
+#aircraft_image{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#aircraft_image_dessus{
+  grid-column: 2;
+  grid-row: 1 / -1;
+  justify-self: center;
+  align-self: center;
+}
+
+//page comparaison
+.comparaisonCarre{
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  margin-top: 150px;
+}
+.compImageInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.comp1, .comp2{
+  display: flex;
+  flex-direction: column;
+  background-color: $second-color;
+  border-radius: 15px;
+  padding: 24px;
+}
+tr{
+  display: flex;
+  flex-direction: column;
+}
+#nbcrashs, #nbcrashs2, #totfat, #totfat2, #typeVol, #typeVol2{
+  font-weight: normal;
+}
+.imageComp, .imageComp2{
+  padding: 50px;
+  background-color: $third-color;
+  border-radius: 15px;
+}
+
+.imageComp2{
+  transform: scaleX(-1);
+}
+
+@media (max-width: 1025px){
   .cockpit {
     height: 150px;
   }
@@ -296,5 +378,43 @@ button {
   .flex-boutons{
     flex-direction: column; 
     gap: 24px; 
+  }
+  .btn-deco{
+    border: 5px solid $main-color;
+  }
+  .grid-info {
+    display: none;
+  }
+  .marquelogo{
+    display:none;
+  }
+  .grid-boutons {
+    display: none;
+  }
+  .btn-choisir {
+    display: block;
+    position: relative;
+    top:48px;
+  }
+  .mobile {
+    top:1px;
+  }
+  .btn-reset {
+    display: block;
+    position: relative;
+    top:48px;
+    width: 100px;
+    font-weight: 800;
+  }
+  .btn-catalogue2 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .video-mobile {
+    display:block
+  }
+  .video-pc {
+    display:none;
   }
 }
