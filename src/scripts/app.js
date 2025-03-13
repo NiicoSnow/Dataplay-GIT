@@ -722,14 +722,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener('keydown', function(event) {
     const avion = document.getElementById('aircraft_image_dessus');
-    const elementsAutour = document.getElementById('.grid-info');
+    const elementsAutour = document.querySelector('.grid-info');
     const style = window.getComputedStyle(avion);
-    let left = parseInt(style.left);
-    let top = parseInt(style.top);
+    let left = parseInt(style.left) || 0; // Assure-toi que left est un nombre
+    let top = parseInt(style.top) || 0; // Assure-toi que top est un nombre
 
     switch (event.key) {
         case 'ArrowUp':
-            ".grid-info".style.opacity = '0';
+            elementsAutour.style.opacity = '0';
             break;
         case 'ArrowLeft':
             avion.style.left = (left - 10) + 'px';
@@ -739,7 +739,6 @@ document.addEventListener('keydown', function(event) {
             break;
     }
 });
-
 
 
 
