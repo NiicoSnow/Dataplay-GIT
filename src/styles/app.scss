@@ -120,6 +120,7 @@ html, body {
 button {
   cursor: pointer;
   font-size: 1em;
+  align-items: center;
 }
 .cockpit {
   position: fixed;
@@ -424,6 +425,8 @@ h1{
     width: fit-content;
     padding: 18px;
     border-radius: 15px;
+    display: block; /* S'assurer que le conteneur est visible */
+    z-index: 1; /* Priorité de l'élément sur les autres éléments */
   }
   .btn-compagnie, .btn-modele{
     margin-bottom: 6px;
@@ -480,6 +483,10 @@ h1{
   }
   .resultats--hidden, .resultats2--hidden{
     display: none;
+  }
+  select {
+    pointer-events: auto; /* S'assurer que les éléments sont cliquables */
+    z-index: 2; /* Priorité des éléments sur le conteneur */
   }
 }
 @media (max-width: 500px) {
