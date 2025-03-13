@@ -384,6 +384,17 @@ h1{
   width: 324px;
 }
 
+#aircraft_image_dessus {
+  position: absolute;
+  transition: all 0.1s;
+  left: 50%;  /* Positionnement initial à 50% de la largeur de la fenêtre */
+  top: 22%;   /* Positionnement initial à 50% de la hauteur de la fenêtre */
+  transform: translate(-50%, -50%); /* Centrer l'image par rapport à son propre centre */
+  width: 300px; /* Fixe la largeur initiale */
+  height: auto; /* Garde l'aspect ratio */
+}
+
+
 @media (max-width: 1025px){
   .cockpit {
     height: 150px;
