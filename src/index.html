@@ -24,36 +24,118 @@
 
   <!-- Section Catalogue (cachée par défaut) -->
   <section class="page catalogue">
-    <h1>Liste des Accidents d'Avion</h1>
-    <select id="choix_aircraft" onchange="updateDates(); updateModels(); updateOperators(); filterData();">
-        <option value="">Tous les constructeurs</option>
-    </select>
-    <select id="choix_modele" onchange="updateImage(); updateDates(); updateOperators(); filterData();">
-        <option value="">Tous les modèles</option>
-    </select>
-    <select id="choix_operator" onchange="updateDates(); filterData();">
-        <option value="">Toutes les compagnies</option>
-    </select>
-    <select id="choix_date" onchange="filterData();">
-        <option value="">Toutes les dates</option>
-    </select>
-    
-    <p><strong>Immatriculation : </strong><span id="immatriculation">/</span></p>
-    <p><strong>Année de production : </strong><span id="YOM">/ </span></p>
-    <p><strong>Nombre d'années en service : </strong><span id="nbAnnee">/</span></p>
-    <p><strong>Équipage à bord : </strong><span id="crew_board">/</span></p>
-    <p><strong>Membres de l'équipage décédés : </strong><span id="crew">/</span></p>
-    <p><strong>Passagers à bord : </strong><span id="pax_board">/</span></p>
-    <p><strong>Passagers décédés : </strong><span id="pax">/</span></p>
-    <p><strong>Cause de l'accident : </strong><span id="cause">/</span></p>
-    <p><strong>Pays : </strong><span id="pays">/</span></p>
-
     <img id="aircraft_image" src="" alt="Image du modèle d'avion" style="display:none; width:300px;">
-    <img id="aircraft_image_dessus" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
+    <div class="grid-info">
+      <div class="info-DA info-1">
+        <p><strong>Immatriculation&nbsp;:&nbsp;</strong><span id="immatriculation">/</span></p>
+        <p><strong>Année&nbsp;de&nbsp;production&nbsp;:&nbsp;</strong><span id="YOM">/ </span></p>
+        <p><strong>Nombre&nbsp;d'années&nbsp;en&nbsp;service&nbsp;:&nbsp;</strong><span id="nbAnnee">/</span></p>
+        <p><strong>Type&nbsp;de&nbsp;vol&nbsp;:&nbsp;</strong><span id="flightType">/</span></p>
+      </div>
+      <div class="info-DA info-2">
+        <p><strong>Équipage&nbsp;à&nbsp;bord&nbsp;:&nbsp;</strong><span id="crew_board">/</span></p>
+        <p><strong>Membres&nbsp;de&nbsp;l'équipage&nbsp;décédés&nbsp;:&nbsp;</strong><span id="crew">/</span></p>
+        <p><strong>Passagers&nbsp;à&nbsp;bord&nbsp;:&nbsp;</strong><span id="pax_board">/</span></p>
+        <p><strong>Passagers&nbsp;décédés&nbsp;:&nbsp;</strong><span id="pax">/</span></p>
+      </div>
+      <div class="info-DA info-3">
+        <p><strong>Cause&nbsp;de&nbsp;l'accident&nbsp;:&nbsp;</strong><span id="cause">/</span></p>
+        <p><strong>Pays&nbsp;du&nbsp;crash&nbsp;:&nbsp;</strong><span id="pays">/</span></p>
+      </div>
+      
+      <img id="aircraft_image_dessus" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
+    </div>
+
+    
+
+    <button class="btn-accueil">▼</button>
+    <div class="buttons grid-boutons">
+      <select id="choix_aircraft" class="btn-constructeur btn-deco2">
+        <option value="">Tous les constructeurs</option>
+      </select>
+      <select id="choix_modele" class="btn-modele btn-deco2">
+          <option value="">Tous les modèles</option>
+      </select>
+      <button class="btn-comparaison2 btn-deco">Comparaison</button>
+      <select id="choix_operator" class="btn-compagnie btn-deco2">
+          <option value="">Toutes les compagnies</option>
+      </select>
+      <select id="choix_date" class="btn-date btn-deco2">
+          <option value="">Toutes les dates</option>
+      </select>
+    </div>
+    <div class="buttons mobile">
+      <button class="btn-choisir btn-deco">Choisir un avion</button>
+    </div>
   </section>
 
   <!-- Section Comparaison (cachée par défaut) -->
+  
+  
+  
   <section class="page comparaison">
+    <div class="comparaisonCarre">
+      <div class="compImageInfo">
+        <img id="aircraft_image_comp1" class= "imageComp" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
+        <div class="comp1">
+          <label>Constructeur :</label>
+          <select id="aircraftSelect">
+              <option value="">Sélectionner un constructeur</option>
+          </select>
+
+          <label>Modèle :</label>
+          <select id="modelSelect">
+              <option value="">Sélectionner un modèle</option>
+          </select>
+
+          <h3>Résultats :</h3>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Nombre de Crashs</th>
+                      <th id="nbcrashs">/</th>
+                      <th>Nombre total de victimes</th>
+                      <th id="totfat">/</th>
+                      <!--<th>Type de vol</th>
+                      <th id="typeVol">/</th>
+                      <th>Age moyen</th>
+                      <th id="moyAge">/</th>
+                      <th id="p_nbAnnee"></th>-->
+                  </tr>
+              </thead>
+          </table>
+        </div>
+      </div>
+      <div class="compImageInfo">
+        <img id="aircraft_image_comp2" class= "imageComp2" src="" alt="Image du modèle d'avion vue dessus" style="display:none; width:300px;">
+        <div class="comp2">
+          <label>Constructeur :</label>
+          <select id="aircraftSelect2">
+            <option value="">Sélectionner un constructeur</option>
+          </select>
+
+          <label>Modèle :</label>
+          <select id="modelSelect2">
+              <option value="">Sélectionner un modèle</option>
+          </select>
+
+          <h3>Résultats :</h3>
+          <table>
+              <thead>
+                  <tr>
+                    <th>Nombre de Crashs</th>
+                    <th id="nbcrashs2">/</th>
+                    <th>Nombre total de victimes</th>
+                    <th id="totfat2">/</th>
+                    <!--<th>Type de vol</th>
+                    <th id="typeVol2">/</th>-->
+                  </tr>
+              </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <button class="btn-accueil">▼</button>
     <div class="buttons flex-boutons">
       <button class="btn-catalogue2 btn-deco">Catalogue</button>
@@ -69,7 +151,8 @@
     <video class="video-mobile" autoplay loop muted playsinline>
       <source src="assets/images/animationnuageportrait.webm" type="video/webm">
     </video>
-</div>
+  </div>
+
   <img class="cockpitup" src="assets/images/cockpithaut.webp"srcset="assets/images/cockpithautx2.webp 2x" alt="image d'un cockpit supérieur d'avion en 2D crée en vectoriel pour donner une immersion dans le thème du site">
   <img class="cockpit" src="assets/images/cockpit.webp"srcset="assets/images/cockpitx2.webp 2x" alt="image d'un cockpit inférieur d'avion en 2D crée en vectoriel pour donner une immersion dans le thème du site">
 </body>
