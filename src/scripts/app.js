@@ -729,13 +729,13 @@ document.addEventListener('keydown', function(event) {
 
     switch (event.key) {
         case 'ArrowUp':
-            elementsAutour.style.opacity = '0';
+            ".grid-info".style.opacity = '0';
             break;
         case 'ArrowLeft':
-            avion.style.left = (left - 10) + 'px';
+            aircraft_image.style.left = (left - 10) + 'px';
             break;
         case 'ArrowRight':
-            avion.style.left = (left + 10) + 'px';
+            aircraft_image.style.left = (left + 10) + 'px';
             break;
     }
 });
