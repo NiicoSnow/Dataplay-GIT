@@ -743,6 +743,50 @@ document.addEventListener('DOMContentLoaded', function() {
     resetButton.addEventListener('click', resetSelections);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const aircraftSelect2 = document.getElementById('aircraftSelect2');
+    const modelSelect2 = document.getElementById('modelSelect2');
+    const selection2 = document.querySelector('.selection2');
+    const resultats2 = document.querySelector('.resultats2');
+    const resetButton = document.querySelector('.btn-reset');
+    const hiddenClass = 'resultats--hidden';
+
+    const aircraftImageComp2 = document.getElementById('aircraft_image_comp2');
+
+    // Store initial states
+    const initialImageSrc = aircraftImageComp2.src;
+    const initialDisplayStyle = aircraftImageComp2.style.display;
+
+    function checkCompletion() {
+        if (aircraftSelect2.value && modelSelect2.value) {
+            selection2.classList.add(hiddenClass);
+            resultats2.classList.remove(hiddenClass);
+        } else {
+            selection2.classList.remove(hiddenClass);
+            resultats2.classList.add(hiddenClass);
+        }
+    }
+
+    function resetSelections() {
+        aircraftSelect2.value = '';
+        modelSelect2.value = '';
+        selection2.classList.remove(hiddenClass);
+        resultats2.classList.add(hiddenClass);
+
+        // Reset image
+        aircraftImageComp2.src = initialImageSrc;
+        aircraftImageComp2.style.display = initialDisplayStyle;
+    }
+
+    aircraftSelect2.addEventListener('change', checkCompletion);
+    modelSelect2.addEventListener('change', checkCompletion);
+    resetButton.addEventListener('click', resetSelections);
+
+    // Initial reset to ensure the page is in initial state on load
+    resetSelections();
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
     var button = document.querySelector(".btn-choisir");
     var gridBoutons = document.querySelector(".grid-boutons");

@@ -174,8 +174,7 @@ button {
   column-gap: 48px;
   width: 100%;
   height: 200px;
-  align-items: center;
-  position: relative;  
+  align-items: center; 
 }
 .btn-catalogue {
   grid-column: 2;
@@ -197,6 +196,20 @@ button {
   border: none;
   position: absolute;
   bottom: 20px;
+  z-index: 10;
+}
+.btn-accueil2 {
+  border-radius: 100%;
+  height: 75px;
+  width: 75px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding-top: 5px;
+  color: #FF7474;
+  background-color: $main-color;
+  border: none;
   z-index: 10;
 }
 
@@ -290,6 +303,9 @@ button {
   background-color: #bbddff;
 }
 .btn-accueil:hover {
+  background-color: #174d84;
+}
+.btn-accueil2:hover {
   background-color: #174d84;
 }
 select{
