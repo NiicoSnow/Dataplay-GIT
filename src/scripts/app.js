@@ -1,13 +1,11 @@
+/** On a utilisé pas mal l'IA pour le JS, pour GSAP, le changement de page en un html et pour le traitement de donnée avec le Json */
+
 "use strict"
 
 import { gsap } from "gsap";
 
-/*gsap.to(".title__hidden", {duration: 1.5, y: -150, ease: "power2.out"});*/
 gsap.to(".bottom__hidden", {duration: 1.5, y: "100%", ease: "power2.out", delay: 0.5});
 gsap.to(".top__hidden", {duration: 1.5, y: "-100%", ease: "power2.out", delay: 0.5});
-/*gsap.from("button", {duration: 1.5, y: 150, ease: "power2.out"});*/
-
-
 
 catalogue.onclick = function (){
     gsap.fromTo(".btn-comparaison2",{duration: 0.5, y: 250, ease: "power2.out"},{y:0, delay: 0.3});
@@ -15,8 +13,6 @@ catalogue.onclick = function (){
   gsap.to(".btn__anim__acceuil",{duration: 0.5, y: 250, ease: "power2.out"});
   gsap.to(".anim__hidden--version1",{duration: 0.5, x: "100%", ease: "power2.out",delay: 0.3, stagger: 0.1});
   gsap.to(".anim__hidden--version2",{duration: 0.5, x: "100%", ease: "power2.out",delay: 0.4});
- /*gsap.from(".marquelogo",{duration: 0.8, x: -250, ease: "power2.out", delay: 0.3});*/
-  /*gsap.to("h1", {duration: 0.5, y: -250, ease: "power2.out"})*/
 }
 
 catalogue2.onclick = function (){
@@ -26,16 +22,12 @@ catalogue2.onclick = function (){
     gsap.to(".anim__hidden",{duration: 0.5, y:0, ease: "power2.out", stagger: 0.07});
     gsap.fromTo(".anim__hidden--version1",{x:0},{duration: 0.5, x: "100%", ease: "power2.out",delay: 0.5, stagger: 0.1});
     gsap.fromTo(".anim__hidden--version2",{x:0},{duration: 0.5, x: "-100%", ease: "power2.out",delay: 0.4});
-   /*gsap.from(".marquelogo",{duration: 0.8, x: -250, ease: "power2.out", delay: 0.3});*/
-    /*gsap.to("h1", {duration: 0.5, y: -250, ease: "power2.out"})*/
 }
 
 comparaison.onclick = function (){
     gsap.to(".btn__anim__acceuil",{duration: 0.5, y: 250, ease: "power2.out"});
     gsap.fromTo(".btn-catalogue2",{duration: 0.5, y: 250, ease: "power2.out"},{y:0, delay: 0.3});
     gsap.fromTo(".anim__hidden",{ y: 0},{duration: 0.5, y:"100%",ease: "power2.out", delay: 0.4, stagger: 0.1});
-   /*gsap.from(".marquelogo",{duration: 0.8, x: -250, ease: "power2.out", delay: 0.3});*/
-    /*gsap.to("h1", {duration: 0.5, y: -250, ease: "power2.out"})*/
 }
 
 comparaison2.onclick = function (){
@@ -49,7 +41,6 @@ comparaison2.onclick = function (){
 
 
 accueil.onclick = function (){
-  /*gsap.to("h1", {duration: 0.5, y: 0, ease: "power2.out"})*/
   gsap.to(".btn-comparaison2",{duration: 0.5, y: 250, ease: "power2.out", delay:0.1});
   gsap.to(".catalogue select",{duration: 0.5, y: 250, ease: "power2.out"});
   gsap.to(".btn__anim__acceuil",{duration: 0.5, y: 0, ease: "power2.out", delay:0.5});
@@ -410,7 +401,6 @@ document.querySelector('#choix_operator').addEventListener('change', () => {
     updateDates();
     filterData();
 
-    /*gsap.fromTo("#aircraft_image",{x:"-100%",opacity: 1},{duration: 3, x:"100%", ease: "power2.out", opacity: 0})*/
     gsap.fromTo("#aircraft_image",{x:"-600%", opacity: 1},{ duration: 12, opacity:0, x:"200%", ease: "power2.out"})
 });
 document.querySelector('#choix_date').addEventListener('change', () => {
@@ -615,61 +605,6 @@ document.addEventListener("DOMContentLoaded", () => {
         updateImageComp2();
     });
 });
-
-
-/*
-// Calcul de l'âge moyen par modèle d'avion
-function calculateAverageAges(data) {
-    console.log("age");
-    const ageSums = {};
-    const ageCounts = {};
-  
-    function calculerNbAnnee(anneeYOM, dateCrash) {
-      const anneeConstruction = anneeYOM;
-      const anneeCrash = new Date(dateCrash).getFullYear(); // Assurez-vous que dateCrash est bien un format date
-      const ageAvion = anneeCrash - anneeConstruction;
-      return ageAvion;
-    }
-  
-    crashData.forEach(crash => {
-      const model = crash.Model;
-      const yom = crash.YOM;
-      const dateCrash = crash.Date; // Assurez-vous que les données du crash incluent la date
-      if (yom && dateCrash) {
-        const age = calculerNbAnnee(yom, dateCrash);
-        if (!ageSums[model]) {
-          ageSums[model] = 0;
-          ageCounts[model] = 0;
-        }
-        ageSums[model] += age;
-        ageCounts[model] += 1;
-        document.getElementById('p_nbAnnee').innerHTML = `${age}`;
-      }
-    });
-  
-    const averageAges = {};
-    for (const model in ageSums) {
-      averageAges[model] = (ageSums[model] / ageCounts[model]).toFixed(2);
-    }
-  
-    return averageAges;
-  }
-  
-  document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM chargé");
-    const data = crashData; // Assurez-vous que crashData est correctement défini
-    console.log("crashData :", data);
-    if (!data) {
-      console.error("crashData n'est pas défini.");
-      return;
-    }
-    populateAircraftSelect2(); // Assurez-vous que cette fonction est définie
-    document.querySelector('#moyAge').addEventListener('change', () => {
-      const averageAges = calculateAverageAges(data);
-      console.log(averageAges);
-    });
-  });
-*/
 
 document.addEventListener('DOMContentLoaded', function() {
     const aircraftSelect = document.getElementById('aircraftSelect');

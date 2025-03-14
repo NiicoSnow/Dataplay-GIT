@@ -1,3 +1,5 @@
+/* On a très peu utilisé l'IA pour le coté SCSS */
+
 @import 'utils/variables';
 @import 'components/type';
 
@@ -475,16 +477,6 @@ h1{
   animation: defilement-rtl 9s infinite linear;
 }
 
-/*
-@keyframes defilement-rtl {
-  0% {
-    transform: translateX(-100%);  
-  }
-  100%{
-    transform: translateX(800%);
-  }
-}*/
-
 #aircraft_image_dessus{
   grid-column: 2;
   grid-row: 1 / -1;
@@ -588,8 +580,8 @@ tr{
     width: fit-content;
     padding: 18px;
     border-radius: 15px;
-    display: block; /* S'assurer que le conteneur est visible */
-    z-index: 1; /* Priorité de l'élément sur les autres éléments */
+    display: block; 
+    z-index: 1; 
   }
   .btn-compagnie, .btn-modele{
     margin-bottom: 6px;
@@ -648,8 +640,8 @@ tr{
     display: none;
   }
   select {
-    pointer-events: auto; /* S'assurer que les éléments sont cliquables */
-    z-index: 2; /* Priorité des éléments sur le conteneur */
+    pointer-events: auto; 
+    z-index: 2;
   }
   #aircraft_image, #aircraft_image_dessus{
     width: 40%;
