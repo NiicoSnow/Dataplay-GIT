@@ -741,7 +741,7 @@ document.addEventListener('keydown', function(event) {
                 });
                 avionProfil.style.display = 'none'; // Masque l'image de l'avion vue de profil
                 allowMovement = true; // Permet le mouvement horizontal
-                avionDessus.style.width = '600px'; // Augmente la taille de l'avion vue de dessus
+                avionDessus.style.width = '500px'; // Augmente la taille de l'avion vue de dessus
             } else {
                 elementsAutour.forEach(element => {
                     element.style.opacity = '1';
