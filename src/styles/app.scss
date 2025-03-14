@@ -198,6 +198,11 @@ button {
   bottom:20px;
   z-index: 10;
 }
+
+#accueil2{
+  top: 0;
+}
+
 .flex-boutons{
   display: flex;   
   justify-content: center;
@@ -314,6 +319,7 @@ label{
   right: 20px;
   width: 300px;
 }
+
 #aircraft_image_dessus{
   grid-column: 2;
   grid-row: 1 / -1;
@@ -333,6 +339,8 @@ label{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
+  overflow: hidden;
 }
 .comp1, .comp2{
   display: flex;
@@ -450,18 +458,19 @@ h1{
 #aircraft_image{
   position: absolute;
   top: 20px;
-  left: 0px;
+  right: 0;
   animation: defilement-rtl 9s infinite linear;
 }
 
+/*
 @keyframes defilement-rtl {
   0% {
-    transform: translateX(-100%);      /* position initiale à droite */
+    transform: translateX(-100%);  
   }
   100%{
-    transform: translateX(800%)
+    transform: translateX(800%);
   }
-}
+}*/
 
 #aircraft_image_dessus{
   grid-column: 2;

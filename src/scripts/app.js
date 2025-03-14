@@ -3,8 +3,8 @@
 import { gsap } from "gsap";
 
 /*gsap.to(".title__hidden", {duration: 1.5, y: -150, ease: "power2.out"});*/
-gsap.to(".bottom__hidden", {duration: 1.5, y: "100%", ease: "power2.out"});
-gsap.to(".top__hidden", {duration: 1.5, y: "-100%", ease: "power2.out"});
+gsap.to(".bottom__hidden", {duration: 1.5, y: "100%", ease: "power2.out", delay: 0.5});
+gsap.to(".top__hidden", {duration: 1.5, y: "-100%", ease: "power2.out", delay: 0.5});
 /*gsap.from("button", {duration: 1.5, y: 150, ease: "power2.out"});*/
 
 
@@ -399,7 +399,8 @@ document.querySelector('#choix_operator').addEventListener('change', () => {
     updateDates();
     filterData();
 
-    /*gsap.from("#aircraft_image", {x:-1000, duration: 10})*/
+    /*gsap.fromTo("#aircraft_image",{x:"-100%",opacity: 1},{duration: 3, x:"100%", ease: "power2.out", opacity: 0})*/
+    gsap.fromTo("#aircraft_image",{x:"-600%", opacity: 1},{ duration: 12, opacity:0, x:"200%", ease: "power2.out"})
 });
 document.querySelector('#choix_date').addEventListener('change', () => {
     filterData();
