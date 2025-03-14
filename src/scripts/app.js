@@ -755,12 +755,12 @@ document.addEventListener('keydown', function(event) {
             break;
         case 'ArrowLeft':
             if (allowMovement) {
-                avionDessus.style.left = (left - 15) + 'px'; // Déplace l'image de l'avion vue de dessus vers la gauche
+                avionDessus.style.left = (left - 50) + 'px'; // Déplace l'image de l'avion vue de dessus vers la gauche
             }
             break;
         case 'ArrowRight':
             if (allowMovement) {
-                avionDessus.style.left = (left + 15) + 'px'; // Déplace l'image de l'avion vue de dessus vers la droite
+                avionDessus.style.left = (left + 50) + 'px'; // Déplace l'image de l'avion vue de dessus vers la droite
             }
             break;
     }

@@ -332,12 +332,12 @@ label{
   top: 20px;
   right: 20px;
 }
-#aircraft_image_dessus{
-  grid-column: 2;
-  grid-row: 1 / -1;
-  justify-self: center;
-  align-self: center;
-}
+// #aircraft_image_dessus{
+//   grid-column: 2;
+//   grid-row: 1 / -1;
+//   justify-self: center;
+//   align-self: center;
+// }
 
 //page comparaison
 .comparaisonCarre{
@@ -386,12 +386,13 @@ h1{
 
 #aircraft_image_dessus {
   position: absolute;
-  transition: all 0.01s;
+  transition: all 0.3s;
   left: 50%;  /* Positionnement initial à 50% de la largeur de la fenêtre */
   top: 50%;   /* Positionnement initial à 50% de la hauteur de la fenêtre */
   transform: translate(-50%, -50%); /* Centrer l'image par rapport à son propre centre */
   width: 300px; /* Fixe la largeur initiale */
   height: auto; /* Garde l'aspect ratio */
+  margin-bottom: 200px;
 }
 
 
