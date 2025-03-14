@@ -225,7 +225,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,auto);
-  margin-top: 5%;
+  margin-top: 12%;
 }
 .info-1 {
   grid-column: 1;
@@ -386,7 +386,7 @@ h1{
 
 #aircraft_image_dessus {
   position: absolute;
-  transition: all 0.1s;
+  transition: all 0.01s;
   left: 50%;  /* Positionnement initial à 50% de la largeur de la fenêtre */
   top: 50%;   /* Positionnement initial à 50% de la hauteur de la fenêtre */
   transform: translate(-50%, -50%); /* Centrer l'image par rapport à son propre centre */
