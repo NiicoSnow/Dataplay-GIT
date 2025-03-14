@@ -216,13 +216,6 @@ button {
 #accueil2{
   top: 0;
 }
-
-.flex-boutons{
-  display: flex;   
-  justify-content: center;
-  align-items: center;
-  gap: 363px;
-}
 .btn-modele {
   align-self: end;
   margin-bottom:48px;
@@ -291,10 +284,6 @@ button {
 .info-4 {
   grid-column: 2;
   grid-row: 4;
-}
-.btn-catalogue2 {
-  position: relative;
-  bottom:72px
 }
 .btn-deco:hover {
   background-color: #bbddff;
@@ -471,6 +460,10 @@ h1{
     right: 20px;
     width: 300px;
   }
+  .btn-catalogue2 {
+    position: relative;
+    bottom: 54px;
+  }
 }
 #aircraft_image{
   position: absolute;
@@ -501,7 +494,7 @@ h1{
   display: flex;
   flex-direction: row;
   gap: 90px;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 .compImageInfo{
   display: flex;
@@ -533,6 +526,19 @@ tr{
 .imageComp2{
   transform: scaleX(-1);
 }
+.flex-boutons{
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+  gap: 363px;
+}
+.flex-boutons2{
+  display: flex;
+  flex-direction: column-reverse;  
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+}
 
 
 @media (max-width: 1025px){
@@ -553,7 +559,7 @@ tr{
   .title {
     font-size: 40px;
   }
-  .flex-boutons{
+  .flex-boutons, .flex-boutons2{
     flex-direction: column; 
     gap: 24px; 
   }

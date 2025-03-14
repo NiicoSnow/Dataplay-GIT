@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnCatalogue    = document.querySelector(".btn-catalogue");    // Accueil => Catalogue
   const btnComparaison  = document.querySelector(".btn-comparaison");  // Accueil => Comparaison
   const btnAccueilListe = document.querySelectorAll(".btn-accueil");   // Retour à l'accueil
+  const btnAccueilListe2 = document.querySelectorAll(".btn-accueil2");   // Retour à l'accueil
 
   // == NOUVEAUX BOUTONS pour naviguer Catalogue <=> Comparaison ==
   const btnComparaison2 = document.querySelector(".btn-comparaison2"); // Catalogue => Comparaison
@@ -102,6 +103,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   btnAccueilListe.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      setTimeout(() => {
+        catalogueSection.classList.remove("active");
+        comparaisonSection.classList.remove("active");
+        accueilSection.classList.add("active");
+      }, 500); // Délai de 2 secondes (2000 ms)
+    });
+  });
+
+  btnAccueilListe2.forEach((btn) => {
     btn.addEventListener("click", () => {
       setTimeout(() => {
         catalogueSection.classList.remove("active");
@@ -744,46 +755,43 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const aircraftSelect2 = document.getElementById('aircraftSelect2');
-    const modelSelect2 = document.getElementById('modelSelect2');
-    const selection2 = document.querySelector('.selection2');
-    const resultats2 = document.querySelector('.resultats2');
+    const aircraftSelect = document.getElementById('aircraftSelect2');
+    const modelSelect = document.getElementById('modelSelect2');
+    const selection = document.querySelector('.selection2');
+    const resultats = document.querySelector('.resultats2');
     const resetButton = document.querySelector('.btn-reset');
-    const hiddenClass = 'resultats--hidden';
+    const hiddenClass = 'resultats2--hidden';
 
-    const aircraftImageComp2 = document.getElementById('aircraft_image_comp2');
+    const aircraftImageComp1 = document.getElementById('aircraft_image_comp2');
 
     // Store initial states
-    const initialImageSrc = aircraftImageComp2.src;
-    const initialDisplayStyle = aircraftImageComp2.style.display;
+    const initialImageSrc = aircraftImageComp1.src;
+    const initialDisplayStyle = aircraftImageComp1.style.display;
 
     function checkCompletion() {
-        if (aircraftSelect2.value && modelSelect2.value) {
-            selection2.classList.add(hiddenClass);
-            resultats2.classList.remove(hiddenClass);
+        if (aircraftSelect.value && modelSelect.value) {
+            selection.classList.add(hiddenClass);
+            resultats.classList.remove(hiddenClass);
         } else {
-            selection2.classList.remove(hiddenClass);
-            resultats2.classList.add(hiddenClass);
+            selection.classList.remove(hiddenClass);
+            resultats.classList.add(hiddenClass);
         }
     }
 
     function resetSelections() {
-        aircraftSelect2.value = '';
-        modelSelect2.value = '';
-        selection2.classList.remove(hiddenClass);
-        resultats2.classList.add(hiddenClass);
+        aircraftSelect.value = '';
+        modelSelect.value = '';
+        selection.classList.remove(hiddenClass);
+        resultats.classList.add(hiddenClass);
 
         // Reset image
-        aircraftImageComp2.src = initialImageSrc;
-        aircraftImageComp2.style.display = initialDisplayStyle;
+        aircraftImageComp1.src = initialImageSrc;
+        aircraftImageComp1.style.display = initialDisplayStyle;
     }
 
-    aircraftSelect2.addEventListener('change', checkCompletion);
-    modelSelect2.addEventListener('change', checkCompletion);
+    aircraftSelect.addEventListener('change', checkCompletion);
+    modelSelect.addEventListener('change', checkCompletion);
     resetButton.addEventListener('click', resetSelections);
-
-    // Initial reset to ensure the page is in initial state on load
-    resetSelections();
 });
 
 
