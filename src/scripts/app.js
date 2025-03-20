@@ -344,7 +344,7 @@ function updateImageComp1() {
     if (selectedModel && aircraftImages[selectedModel]) {
         console.log('updated'); 
         aircraftImage.src = aircraftImages[selectedModel];
-        aircraftImage.style.display = 'block';
+        aircraftImage.style.display = 'flex';
     }
     else {
         console.log('not');
@@ -418,7 +418,7 @@ function updateImageComp2() {
     if (selectedModel && aircraftImages[selectedModel]) {
         console.log('updated');
         aircraftImage.src = aircraftImages[selectedModel];
-        aircraftImage.style.display = 'block';
+        aircraftImage.style.display = 'flex';
     }
     else {
         console.log('not');
@@ -748,7 +748,7 @@ document.addEventListener('keydown', function(event) {
                 });
                 avionProfil.style.display = 'block'; // Affiche l'image de l'avion vue de profil
                 avionDessus.style.left = '50%'; // Réinitialise la position de l'avion vue de dessus
-                avionDessus.style.top = '50%';
+                avionDessus.style.top = '40%';
                 avionDessus.style.width = '300px'; // Restaure la taille originale de l'avion vue de dessus
                 allowMovement = false; // Désactive le mouvement horizontal
             }
@@ -767,8 +767,28 @@ document.addEventListener('keydown', function(event) {
     
 });
 
+// Sélectionnez les éléments dans l'ordre souhaité
+const btnAircraft = document.querySelector('#choix_aircraft');
+const btnModele = document.querySelector('#choix_modele');
+const btnCompagnie = document.querySelector('#choix_operator');
+const btnDate = document.querySelector('#choix_date');
+const btnAircraftSelect = document.querySelector("#aircraftSelect");
+const btnAircraftSelect2 = document.querySelector("#aircraftSelect2");
+const btnModelSelect = document.querySelector("#modelSelect");
+const btnModelSelect2 = document.querySelector("#modelSelect2");
 
+// Fonction pour ajouter la classe active
+function activateNext(currentElement, nextElement) {
+  currentElement.addEventListener('change', () => {
+    if (currentElement.value) { // Vérifiez que l'élément est complété
+      nextElement.classList.add('active');
+    }
+  });
+}
 
-
-
-
+// Appelez la fonction pour chaque paire d'éléments
+activateNext(btnAircraft, btnModele);
+activateNext(btnModele, btnCompagnie);
+activateNext(btnCompagnie, btnDate);
+activateNext(btnAircraftSelect, btnModelSelect);
+activateNext(btnAircraftSelect2, btnModelSelect2);

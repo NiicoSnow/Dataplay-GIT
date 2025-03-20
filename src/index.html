@@ -16,6 +16,9 @@
      <!-- Section Accueil (visible par défaut) -->
   <section class="page accueil active">
     <h1 class="title">LOSTFLIGHTS</h1>
+    <p>Bienvenue sur <em>LostFlights</em>, un site qui vous donne accès aux datas relatives à une sélection d'accidents aéronotiques entre 2012 et 2022.</p>
+    <p>Cliqué sur <b>Catalogue</b> pour avoir accès à un crash d'avions en particulier et ces données.</p>
+    <p>Cliqué sur <b>Comparaison</b> pour pouvoir comparer deux types d'avions d'avions entre elles.</p>
     <div class="buttons flex-boutons">
       <button class="btn-catalogue btn-deco">Catalogue</button>
       <button class="btn-comparaison btn-deco">Comparaison</button>
@@ -51,7 +54,7 @@
 
     <button class="btn-accueil">▼</button>
     <div class="buttons grid-boutons grid-boutons__hidden">
-      <select id="choix_aircraft" class="btn-constructeur btn-deco2">
+      <select id="choix_aircraft" class="btn-constructeur btn-deco2 active">
         <option value="">Tous les constructeurs</option>
       </select>
       <select id="choix_modele" class="btn-modele btn-deco2">
@@ -77,11 +80,13 @@
   <section class="page comparaison">
     <div class="comparaisonCarre">
       <div class="compImageInfo">
-        <img id="aircraft_image_comp1" class= "imageComp" src="" alt="Image du modèle d'avion vue dessus" style="display:none;">
+        <div class="img-aircraft">
+          <img id="aircraft_image_comp1" class= "imageComp" src="" alt="Image du modèle d'avion vue dessus" style="display:none;">
+        </div>
         <div class="comp1">
           <div class="selection">
             <label>Constructeur :</label>
-            <select id="aircraftSelect" class="btn-deco3">
+            <select id="aircraftSelect" class="btn-deco3 active">
                 <option value="">Sélectionner un constructeur</option>
             </select>
 
@@ -111,11 +116,13 @@
         </div>
       </div>
       <div class="compImageInfo2">
-        <img id="aircraft_image_comp2" class= "imageComp2" src="" alt="Image du modèle d'avion vue dessus" style="display:none;">
+        <div class="img-aircraft">
+          <img id="aircraft_image_comp2" class= "imageComp2" src="" alt="Image du modèle d'avion vue dessus" style="display:none;">
+        </div>
         <div class="comp2">
           <div class="selection2">
             <label>Constructeur :</label>
-            <select id="aircraftSelect2" class="btn-deco3">
+            <select id="aircraftSelect2" class="btn-deco3 active">
               <option value="">Sélectionner un constructeur</option>
             </select>
 
